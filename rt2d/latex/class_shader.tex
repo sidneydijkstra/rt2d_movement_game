@@ -1,0 +1,129 @@
+\hypertarget{class_shader}{}\section{Shader Class Reference}
+\label{class_shader}\index{Shader@{Shader}}
+
+
+The \hyperlink{class_shader}{Shader} class loads vertex and fragment shader files, and compiles them into a \hyperlink{class_shader}{Shader}.  
+
+
+
+
+{\ttfamily \#include $<$shader.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shader_a0d654ebaca4e0555197c0724c6d30610}\label{class_shader_a0d654ebaca4e0555197c0724c6d30610}} 
+\hyperlink{class_shader_a0d654ebaca4e0555197c0724c6d30610}{Shader} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{class_shader}{Shader}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shader_aff01df87e8a102f270b5b135a295e59d}\label{class_shader_aff01df87e8a102f270b5b135a295e59d}} 
+virtual \hyperlink{class_shader_aff01df87e8a102f270b5b135a295e59d}{$\sim$\+Shader} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \hyperlink{class_shader}{Shader}. \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{class_shader_a64691ffa0d0d8b5ecdc4d06e698422bd}{program\+ID} ()
+\begin{DoxyCompactList}\small\item\em get the program\+ID \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{class_shader_ac9bb10cba974bc2fb4ba78758591967f}{matrix\+ID} ()
+\begin{DoxyCompactList}\small\item\em get the Model\+View\+Projection Matrix\+ID \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{class_shader_abccab59f58d517c4c2ac392f522b0675}{texture\+ID} ()
+\begin{DoxyCompactList}\small\item\em get the texture\+ID \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{class_shader_a3c7b58c01112d49cd433fa6479d54efb}{blend\+Color\+ID} ()
+\begin{DoxyCompactList}\small\item\em get the blend\+Color\+ID \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{class_shader_af2060ae1c85d8db67389c8116a02d9dd}{uv\+Offset\+ID} ()
+\begin{DoxyCompactList}\small\item\em get the uv\+Offset\+ID \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{class_shader_a7bc0245aea0f7c61d17a17273c2faaaf}{load\+Shaders} (const char $\ast$vertex\+\_\+file\+\_\+path, const char $\ast$fragment\+\_\+file\+\_\+path)
+\begin{DoxyCompactList}\small\item\em load shaders from disk \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_shader}{Shader} class loads vertex and fragment shader files, and compiles them into a \hyperlink{class_shader}{Shader}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_shader_a3c7b58c01112d49cd433fa6479d54efb}\label{class_shader_a3c7b58c01112d49cd433fa6479d54efb}} 
+\index{Shader@{Shader}!blend\+Color\+ID@{blend\+Color\+ID}}
+\index{blend\+Color\+ID@{blend\+Color\+ID}!Shader@{Shader}}
+\subsubsection{\texorpdfstring{blend\+Color\+I\+D()}{blendColorID()}}
+{\footnotesize\ttfamily G\+Luint Shader\+::blend\+Color\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the blend\+Color\+ID 
+
+\begin{DoxyReturn}{Returns}
+G\+Luint \+\_\+blend\+Color\+ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_shader_a7bc0245aea0f7c61d17a17273c2faaaf}\label{class_shader_a7bc0245aea0f7c61d17a17273c2faaaf}} 
+\index{Shader@{Shader}!load\+Shaders@{load\+Shaders}}
+\index{load\+Shaders@{load\+Shaders}!Shader@{Shader}}
+\subsubsection{\texorpdfstring{load\+Shaders()}{loadShaders()}}
+{\footnotesize\ttfamily G\+Luint Shader\+::load\+Shaders (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vertex\+\_\+file\+\_\+path,  }\item[{const char $\ast$}]{fragment\+\_\+file\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+load shaders from disk 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+\_\+file\+\_\+path} & path to vertexshader \\
+\hline
+{\em fragment\+\_\+file\+\_\+path} & path to fragmentshader \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+G\+Luint \+\_\+program\+ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_shader_ac9bb10cba974bc2fb4ba78758591967f}\label{class_shader_ac9bb10cba974bc2fb4ba78758591967f}} 
+\index{Shader@{Shader}!matrix\+ID@{matrix\+ID}}
+\index{matrix\+ID@{matrix\+ID}!Shader@{Shader}}
+\subsubsection{\texorpdfstring{matrix\+I\+D()}{matrixID()}}
+{\footnotesize\ttfamily G\+Luint Shader\+::matrix\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the Model\+View\+Projection Matrix\+ID 
+
+\begin{DoxyReturn}{Returns}
+G\+Luint \+\_\+matrix\+ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_shader_a64691ffa0d0d8b5ecdc4d06e698422bd}\label{class_shader_a64691ffa0d0d8b5ecdc4d06e698422bd}} 
+\index{Shader@{Shader}!program\+ID@{program\+ID}}
+\index{program\+ID@{program\+ID}!Shader@{Shader}}
+\subsubsection{\texorpdfstring{program\+I\+D()}{programID()}}
+{\footnotesize\ttfamily G\+Luint Shader\+::program\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the program\+ID 
+
+\begin{DoxyReturn}{Returns}
+G\+Luint \+\_\+program\+ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_shader_abccab59f58d517c4c2ac392f522b0675}\label{class_shader_abccab59f58d517c4c2ac392f522b0675}} 
+\index{Shader@{Shader}!texture\+ID@{texture\+ID}}
+\index{texture\+ID@{texture\+ID}!Shader@{Shader}}
+\subsubsection{\texorpdfstring{texture\+I\+D()}{textureID()}}
+{\footnotesize\ttfamily G\+Luint Shader\+::texture\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the texture\+ID 
+
+\begin{DoxyReturn}{Returns}
+G\+Luint \+\_\+texture\+ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_shader_af2060ae1c85d8db67389c8116a02d9dd}\label{class_shader_af2060ae1c85d8db67389c8116a02d9dd}} 
+\index{Shader@{Shader}!uv\+Offset\+ID@{uv\+Offset\+ID}}
+\index{uv\+Offset\+ID@{uv\+Offset\+ID}!Shader@{Shader}}
+\subsubsection{\texorpdfstring{uv\+Offset\+I\+D()}{uvOffsetID()}}
+{\footnotesize\ttfamily G\+Luint Shader\+::uv\+Offset\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the uv\+Offset\+ID 
+
+\begin{DoxyReturn}{Returns}
+G\+Luint \+\_\+uv\+Offset\+ID 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{shader_8h}{shader.\+h}\item 
+shader.\+cpp\end{DoxyCompactItemize}

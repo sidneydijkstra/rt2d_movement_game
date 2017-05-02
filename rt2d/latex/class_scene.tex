@@ -1,0 +1,154 @@
+\hypertarget{class_scene}{}\section{Scene Class Reference}
+\label{class_scene}\index{Scene@{Scene}}
+
+
+The \hyperlink{class_scene}{Scene} class is the Base class for your own Scenes. It has a \hyperlink{class_camera}{Camera}, \hyperlink{class_input}{Input} and basic on/off state machine.  
+
+
+
+
+{\ttfamily \#include $<$scene.\+h$>$}
+
+Inheritance diagram for Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scene}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scene_ad10176d75a9cc0da56626f682d083507}{Scene} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{class_scene}{Scene}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_a3b8cec2e32546713915f8c6303c951f1}\label{class_scene_a3b8cec2e32546713915f8c6303c951f1}} 
+virtual \hyperlink{class_scene_a3b8cec2e32546713915f8c6303c951f1}{$\sim$\+Scene} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \hyperlink{class_scene}{Scene}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_scene_af6673f416884a66f46fd1e703d77de03}{is\+Running} ()
+\begin{DoxyCompactList}\small\item\em whether this \hyperlink{class_scene}{Scene} is running or not. \end{DoxyCompactList}\item 
+void \hyperlink{class_scene_af1c55c1cd88c6665609f5cba96dff226}{start} ()
+\begin{DoxyCompactList}\small\item\em start running the \hyperlink{class_scene}{Scene} \end{DoxyCompactList}\item 
+void \hyperlink{class_scene_add01794b17df2030e961468fc88cf2e7}{stop} ()
+\begin{DoxyCompactList}\small\item\em stop running the \hyperlink{class_scene}{Scene} \end{DoxyCompactList}\item 
+\hyperlink{class_camera}{Camera} $\ast$ \hyperlink{class_scene_a1845161fcd088622a1288a6c41bcd574}{camera} ()
+\begin{DoxyCompactList}\small\item\em get a pointer to the \hyperlink{class_camera}{Camera} \end{DoxyCompactList}\item 
+\hyperlink{class_input}{Input} $\ast$ \hyperlink{class_scene_ab8f8ccda2e6a954deb81d0f58c3b88bd}{input} ()
+\begin{DoxyCompactList}\small\item\em get a pointer to the \hyperlink{class_input}{Input} \end{DoxyCompactList}\item 
+void \hyperlink{class_scene_a7308b78f4cc3522369237623fd7a001f}{update\+Scene} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em update this \hyperlink{class_scene}{Scene} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_scene}{Scene} class is the Base class for your own Scenes. It has a \hyperlink{class_camera}{Camera}, \hyperlink{class_input}{Input} and basic on/off state machine. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scene_ad10176d75a9cc0da56626f682d083507}\label{class_scene_ad10176d75a9cc0da56626f682d083507}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{Scene()}{Scene()}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor of the \hyperlink{class_scene}{Scene}. 
+
+This file is part of R\+T2D, a 2D Open\+GL framework.
+
+
+\begin{DoxyItemize}
+\item Copyright 2015 Rik Teerling \href{mailto:rik@onandoffables.com}{\tt rik@onandoffables.\+com}
+\begin{DoxyItemize}
+\item Initial commit 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_a1845161fcd088622a1288a6c41bcd574}\label{class_scene_a1845161fcd088622a1288a6c41bcd574}} 
+\index{Scene@{Scene}!camera@{camera}}
+\index{camera@{camera}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{camera()}{camera()}}
+{\footnotesize\ttfamily \hyperlink{class_camera}{Camera}$\ast$ Scene\+::camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get a pointer to the \hyperlink{class_camera}{Camera} 
+
+\begin{DoxyReturn}{Returns}
+Texture$\ast$ a pointer to the \hyperlink{class_camera}{Camera} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_ab8f8ccda2e6a954deb81d0f58c3b88bd}\label{class_scene_ab8f8ccda2e6a954deb81d0f58c3b88bd}} 
+\index{Scene@{Scene}!input@{input}}
+\index{input@{input}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \hyperlink{class_input}{Input}$\ast$ Scene\+::input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get a pointer to the \hyperlink{class_input}{Input} 
+
+\begin{DoxyReturn}{Returns}
+Input$\ast$ a pointer to the \hyperlink{class_input}{Input} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_af6673f416884a66f46fd1e703d77de03}\label{class_scene_af6673f416884a66f46fd1e703d77de03}} 
+\index{Scene@{Scene}!is\+Running@{is\+Running}}
+\index{is\+Running@{is\+Running}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{is\+Running()}{isRunning()}}
+{\footnotesize\ttfamily bool Scene\+::is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+whether this \hyperlink{class_scene}{Scene} is running or not. 
+
+\begin{DoxyReturn}{Returns}
+bool \+\_\+is\+Running 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_af1c55c1cd88c6665609f5cba96dff226}\label{class_scene_af1c55c1cd88c6665609f5cba96dff226}} 
+\index{Scene@{Scene}!start@{start}}
+\index{start@{start}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Scene\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+start running the \hyperlink{class_scene}{Scene} 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_add01794b17df2030e961468fc88cf2e7}\label{class_scene_add01794b17df2030e961468fc88cf2e7}} 
+\index{Scene@{Scene}!stop@{stop}}
+\index{stop@{stop}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Scene\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+stop running the \hyperlink{class_scene}{Scene} 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_a7308b78f4cc3522369237623fd7a001f}\label{class_scene_a7308b78f4cc3522369237623fd7a001f}} 
+\index{Scene@{Scene}!update\+Scene@{update\+Scene}}
+\index{update\+Scene@{update\+Scene}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{update\+Scene()}{updateScene()}}
+{\footnotesize\ttfamily void Scene\+::update\+Scene (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+update this \hyperlink{class_scene}{Scene} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & the number of seconds since the last update \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{scene_8h}{scene.\+h}\item 
+scene.\+cpp\end{DoxyCompactItemize}

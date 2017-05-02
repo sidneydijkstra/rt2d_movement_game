@@ -1,0 +1,108 @@
+\hypertarget{class_camera}{}\section{Camera Class Reference}
+\label{class_camera}\index{Camera@{Camera}}
+
+
+The \hyperlink{class_camera}{Camera} class handles the concept of having a \hyperlink{class_camera}{Camera} in your \hyperlink{class_scene}{Scene}.  
+
+
+
+
+{\ttfamily \#include $<$camera.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_camera_a01f94c3543f56ede7af49dc778f19331}{Camera} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{class_camera}{Camera}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_camera_ad1897942d0ccf91052386388a497349f}\label{class_camera_ad1897942d0ccf91052386388a497349f}} 
+virtual \hyperlink{class_camera_ad1897942d0ccf91052386388a497349f}{$\sim$\+Camera} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \hyperlink{class_camera}{Camera}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_camera_ac9e359b0a6c41091a0eac46a869790bf}{update\+Camera} (float delta\+Time)
+\begin{DoxyCompactList}\small\item\em updates the view\+Matrix and projection\+Matrix of the \hyperlink{class_camera}{Camera}. \end{DoxyCompactList}\item 
+glm\+::mat4 \hyperlink{class_camera_aa77dcf47815f0549e40111baf0998771}{view\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em get the view\+Matrix of the \hyperlink{class_camera}{Camera}. \end{DoxyCompactList}\item 
+glm\+::mat4 \hyperlink{class_camera_a2eca875ed162335c5c8a3907d8674716}{projection\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em get the projection\+Matrix of the \hyperlink{class_camera}{Camera}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_a57fa6dbb1aabd24b2aff6644eae36533}\label{class_camera_a57fa6dbb1aabd24b2aff6644eae36533}} 
+\hyperlink{pointx_8h_a1de5e45af54f9f098e4ae388726e9677}{Point} \hyperlink{class_camera_a57fa6dbb1aabd24b2aff6644eae36533}{position}
+\begin{DoxyCompactList}\small\item\em The position of the \hyperlink{class_camera}{Camera}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_camera}{Camera} class handles the concept of having a \hyperlink{class_camera}{Camera} in your \hyperlink{class_scene}{Scene}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_camera_a01f94c3543f56ede7af49dc778f19331}\label{class_camera_a01f94c3543f56ede7af49dc778f19331}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor of the \hyperlink{class_camera}{Camera}. 
+
+This file is part of R\+T2D, a 2D Open\+GL framework.
+
+
+\begin{DoxyItemize}
+\item Copyright 2015 Rik Teerling \href{mailto:rik@onandoffables.com}{\tt rik@onandoffables.\+com}
+\begin{DoxyItemize}
+\item Initial commit 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_a2eca875ed162335c5c8a3907d8674716}\label{class_camera_a2eca875ed162335c5c8a3907d8674716}} 
+\index{Camera@{Camera}!projection\+Matrix@{projection\+Matrix}}
+\index{projection\+Matrix@{projection\+Matrix}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{projection\+Matrix()}{projectionMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Camera\+::projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the projection\+Matrix of the \hyperlink{class_camera}{Camera}. 
+
+\begin{DoxyReturn}{Returns}
+glm\+::mat4 \+\_\+projection\+Matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_ac9e359b0a6c41091a0eac46a869790bf}\label{class_camera_ac9e359b0a6c41091a0eac46a869790bf}} 
+\index{Camera@{Camera}!update\+Camera@{update\+Camera}}
+\index{update\+Camera@{update\+Camera}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{update\+Camera()}{updateCamera()}}
+{\footnotesize\ttfamily void Camera\+::update\+Camera (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+updates the view\+Matrix and projection\+Matrix of the \hyperlink{class_camera}{Camera}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The time that\textquotesingle{}s passed since the last update. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_aa77dcf47815f0549e40111baf0998771}\label{class_camera_aa77dcf47815f0549e40111baf0998771}} 
+\index{Camera@{Camera}!view\+Matrix@{view\+Matrix}}
+\index{view\+Matrix@{view\+Matrix}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{view\+Matrix()}{viewMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Camera\+::view\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the view\+Matrix of the \hyperlink{class_camera}{Camera}. 
+
+\begin{DoxyReturn}{Returns}
+glm\+::mat4 \+\_\+view\+Matrix 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{camera_8h}{camera.\+h}\item 
+camera.\+cpp\end{DoxyCompactItemize}

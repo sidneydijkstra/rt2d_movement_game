@@ -1,0 +1,123 @@
+\hypertarget{class_polar__t}{}\section{Polar\+\_\+t$<$ T $>$ Class Template Reference}
+\label{class_polar__t}\index{Polar\+\_\+t$<$ T $>$@{Polar\+\_\+t$<$ T $>$}}
+
+
+Polar (to Cartesian) coordinates helper class.  
+
+
+
+
+{\ttfamily \#include $<$vectorx.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_polar__t_a4e6f79af5d5419c4d48a9b91a8743889}\label{class_polar__t_a4e6f79af5d5419c4d48a9b91a8743889}} 
+\hyperlink{class_polar__t_a4e6f79af5d5419c4d48a9b91a8743889}{Polar\+\_\+t} ()
+\begin{DoxyCompactList}\small\item\em Default Polar\+\_\+t$<$\+T$>$ constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_polar__t_a862fc0e18df7dad1470152e6ef2bd340}{Polar\+\_\+t} (T a, T r)
+\begin{DoxyCompactList}\small\item\em Overloaded Polar\+\_\+t$<$\+T$>$ constructor. \end{DoxyCompactList}\item 
+const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \hyperlink{class_polar__t_aa4f91bf6479b2d2cefb22d79de8e1d42}{cartesian} () const
+\begin{DoxyCompactList}\small\item\em Get the Cartesian coordinates of this \hyperlink{class_polar__t}{Polar\+\_\+t}. \end{DoxyCompactList}\item 
+\hyperlink{class_polar__t}{Polar\+\_\+t}$<$ T $>$ \hyperlink{class_polar__t_a7a7ea302869a50342c010083943a2dbc}{from\+Cartesian} (const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \&vec)
+\begin{DoxyCompactList}\small\item\em Set this Polar from a \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}. \end{DoxyCompactList}\item 
+\hyperlink{class_polar__t}{Polar\+\_\+t}$<$ T $>$ \hyperlink{class_polar__t_a18fa5c39eddf7f3554ddcec7ea95eb27}{from\+Cartesian} (T x, T y)
+\begin{DoxyCompactList}\small\item\em Set this Polar from an x and y. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_polar__t_a97c5268b13511ac64a7650adc36554cb}\label{class_polar__t_a97c5268b13511ac64a7650adc36554cb}} 
+T \hyperlink{class_polar__t_a97c5268b13511ac64a7650adc36554cb}{angle}
+\begin{DoxyCompactList}\small\item\em angle of \hyperlink{class_polar__t}{Polar\+\_\+t} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_polar__t_a2745dabb07096cd7360d88492e2d7eff}\label{class_polar__t_a2745dabb07096cd7360d88492e2d7eff}} 
+T \hyperlink{class_polar__t_a2745dabb07096cd7360d88492e2d7eff}{radius}
+\begin{DoxyCompactList}\small\item\em radius of \hyperlink{class_polar__t}{Polar\+\_\+t} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Polar\+\_\+t$<$ T $>$}
+
+Polar (to Cartesian) coordinates helper class. 
+
+Usage\+: 
+\begin{DoxyCode}
+\hyperlink{class_vector_x__t}{Vector2} vec = \hyperlink{vectorx_8h_a599dfa361f200f3bfcf0dbe7aa2cd5ab}{Vector2}(4, 3);
+std::cout << vec.\hyperlink{class_vector_x__t_a7e497c0abad76724767e78644ff91e35}{getAngle}()*\hyperlink{vectorx_8h_ad04f332238d224f48f547923ee6d3029}{RAD\_TO\_DEG} << std::endl; \textcolor{comment}{// 36.8699}
+std::cout << vec.\hyperlink{class_vector_x__t_aa1548451f4620694a671d9b15be69ba2}{getLength}() << std::endl; \textcolor{comment}{// 5.0}
+
+\hyperlink{class_polar__t}{Polar} p = \hyperlink{vectorx_8h_ae6dadb7c8827f4e57f3a883839948fec}{Polar}(36.8699*\hyperlink{vectorx_8h_aab4087f865137a540e6885dda23341cc}{DEG\_TO\_RAD}, 5.0f);
+\hyperlink{class_vector_x__t}{Vector2} velocity = p.\hyperlink{class_polar__t_aa4f91bf6479b2d2cefb22d79de8e1d42}{cartesian}();
+std::cout << velocity << std::endl; \textcolor{comment}{// (4, 3)}
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_polar__t_a862fc0e18df7dad1470152e6ef2bd340}\label{class_polar__t_a862fc0e18df7dad1470152e6ef2bd340}} 
+\index{Polar\+\_\+t@{Polar\+\_\+t}!Polar\+\_\+t@{Polar\+\_\+t}}
+\index{Polar\+\_\+t@{Polar\+\_\+t}!Polar\+\_\+t@{Polar\+\_\+t}}
+\subsubsection{\texorpdfstring{Polar\+\_\+t()}{Polar\_t()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_polar__t}{Polar\+\_\+t}$<$ T $>$\+::\hyperlink{class_polar__t}{Polar\+\_\+t} (\begin{DoxyParamCaption}\item[{T}]{a,  }\item[{T}]{r }\end{DoxyParamCaption})}
+
+
+
+Overloaded Polar\+\_\+t$<$\+T$>$ constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & angle \\
+\hline
+{\em r} & radius \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_polar__t_aa4f91bf6479b2d2cefb22d79de8e1d42}\label{class_polar__t_aa4f91bf6479b2d2cefb22d79de8e1d42}} 
+\index{Polar\+\_\+t@{Polar\+\_\+t}!cartesian@{cartesian}}
+\index{cartesian@{cartesian}!Polar\+\_\+t@{Polar\+\_\+t}}
+\subsubsection{\texorpdfstring{cartesian()}{cartesian()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \hyperlink{class_polar__t}{Polar\+\_\+t}$<$ T $>$\+::cartesian (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Cartesian coordinates of this \hyperlink{class_polar__t}{Polar\+\_\+t}. 
+
+\begin{DoxyReturn}{Returns}
+Vector\+X\+\_\+t$<$\+T$>$ A \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t} with the cartesian coordinates of this \hyperlink{class_polar__t}{Polar\+\_\+t} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_polar__t_a7a7ea302869a50342c010083943a2dbc}\label{class_polar__t_a7a7ea302869a50342c010083943a2dbc}} 
+\index{Polar\+\_\+t@{Polar\+\_\+t}!from\+Cartesian@{from\+Cartesian}}
+\index{from\+Cartesian@{from\+Cartesian}!Polar\+\_\+t@{Polar\+\_\+t}}
+\subsubsection{\texorpdfstring{from\+Cartesian()}{fromCartesian()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_polar__t}{Polar\+\_\+t}$<$ T $>$ \hyperlink{class_polar__t}{Polar\+\_\+t}$<$ T $>$\+::from\+Cartesian (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \&}]{vec }\end{DoxyParamCaption})}
+
+
+
+Set this Polar from a \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}. 
+
+\begin{DoxyReturn}{Returns}
+Polar\+\_\+t$<$\+T$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_polar__t_a18fa5c39eddf7f3554ddcec7ea95eb27}\label{class_polar__t_a18fa5c39eddf7f3554ddcec7ea95eb27}} 
+\index{Polar\+\_\+t@{Polar\+\_\+t}!from\+Cartesian@{from\+Cartesian}}
+\index{from\+Cartesian@{from\+Cartesian}!Polar\+\_\+t@{Polar\+\_\+t}}
+\subsubsection{\texorpdfstring{from\+Cartesian()}{fromCartesian()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_polar__t}{Polar\+\_\+t}$<$ T $>$ \hyperlink{class_polar__t}{Polar\+\_\+t}$<$ T $>$\+::from\+Cartesian (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y }\end{DoxyParamCaption})}
+
+
+
+Set this Polar from an x and y. 
+
+\begin{DoxyReturn}{Returns}
+Polar\+\_\+t$<$\+T$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vectorx_8h}{vectorx.\+h}\end{DoxyCompactItemize}

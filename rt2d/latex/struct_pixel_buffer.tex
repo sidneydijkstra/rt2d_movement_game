@@ -1,0 +1,175 @@
+\hypertarget{struct_pixel_buffer}{}\section{Pixel\+Buffer Struct Reference}
+\label{struct_pixel_buffer}\index{Pixel\+Buffer@{Pixel\+Buffer}}
+
+
+defines a \hyperlink{struct_pixel_buffer}{Pixel\+Buffer}  
+
+
+
+
+{\ttfamily \#include $<$texture.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_pixel_buffer_aa1d5199f80acc1c154a289b4519a7b97}{Pixel\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hyperlink{struct_pixel_buffer_ada8b571a542bdd0be9cbe29116aac7c8}{Pixel\+Buffer} (int w, int h, unsigned char b, int f, int wr)
+\begin{DoxyCompactList}\small\item\em overloaded constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_pixel_buffer_ac2ac8a033a3c75cdb4f7e69b2724b3d7}\label{struct_pixel_buffer_ac2ac8a033a3c75cdb4f7e69b2724b3d7}} 
+\hyperlink{struct_pixel_buffer_ac2ac8a033a3c75cdb4f7e69b2724b3d7}{$\sim$\+Pixel\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \hyperlink{struct_pixel_buffer_a538a6b35401764c0eae72c3744b05cd5}{set\+Pixel} (int x, int y, \hyperlink{struct_r_g_b_a_color}{R\+G\+B\+A\+Color} color)
+\begin{DoxyCompactList}\small\item\em set a pixel in the buffer to a certain color \end{DoxyCompactList}\item 
+\hyperlink{struct_r_g_b_a_color}{R\+G\+B\+A\+Color} \hyperlink{struct_pixel_buffer_a426b4dd17e4f9d45e107f0390c0e87a9}{get\+Pixel} (int x, int y)
+\begin{DoxyCompactList}\small\item\em get the color of a pixel in the buffer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_pixel_buffer_aad1b15ec3e56a591e2ea09d2dd68aa62}\label{struct_pixel_buffer_aad1b15ec3e56a591e2ea09d2dd68aa62}} 
+void \hyperlink{struct_pixel_buffer_aad1b15ec3e56a591e2ea09d2dd68aa62}{destroy} ()
+\begin{DoxyCompactList}\small\item\em destroy the pixel data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_pixel_buffer_a11764e5814688eee587fe639e292266e}\label{struct_pixel_buffer_a11764e5814688eee587fe639e292266e}} 
+int \hyperlink{struct_pixel_buffer_a11764e5814688eee587fe639e292266e}{width}
+\begin{DoxyCompactList}\small\item\em the width of the file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_pixel_buffer_abd9307aede7aa417f0e0d2a0158a9e86}\label{struct_pixel_buffer_abd9307aede7aa417f0e0d2a0158a9e86}} 
+int \hyperlink{struct_pixel_buffer_abd9307aede7aa417f0e0d2a0158a9e86}{height}
+\begin{DoxyCompactList}\small\item\em the height of the file \end{DoxyCompactList}\item 
+unsigned char \hyperlink{struct_pixel_buffer_aed6c6d8d7043e79be814be447dec108e}{bitdepth}
+\begin{DoxyCompactList}\small\item\em the size of the file \end{DoxyCompactList}\item 
+int \hyperlink{struct_pixel_buffer_a849bcca202ec73555873cbc46b0f3cd0}{filter}
+\begin{DoxyCompactList}\small\item\em the filtering level of the pixel data \end{DoxyCompactList}\item 
+int \hyperlink{struct_pixel_buffer_acb981d89a79a2ec8f755ee42c776552c}{wrap}
+\begin{DoxyCompactList}\small\item\em the wrapping of the pixel data \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_pixel_buffer_ab94577291f3f926bffbc591c871922e4}\label{struct_pixel_buffer_ab94577291f3f926bffbc591c871922e4}} 
+unsigned char $\ast$ \hyperlink{struct_pixel_buffer_ab94577291f3f926bffbc591c871922e4}{data}
+\begin{DoxyCompactList}\small\item\em the pixel data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+defines a \hyperlink{struct_pixel_buffer}{Pixel\+Buffer} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_pixel_buffer_aa1d5199f80acc1c154a289b4519a7b97}\label{struct_pixel_buffer_aa1d5199f80acc1c154a289b4519a7b97}} 
+\index{Pixel\+Buffer@{Pixel\+Buffer}!Pixel\+Buffer@{Pixel\+Buffer}}
+\index{Pixel\+Buffer@{Pixel\+Buffer}!Pixel\+Buffer@{Pixel\+Buffer}}
+\subsubsection{\texorpdfstring{Pixel\+Buffer()}{PixelBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Pixel\+Buffer\+::\+Pixel\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructor 
+
+initialize the width of the buffer
+
+initialize the height of the buffer
+
+initialize the color depth of the pixels
+
+initialize the filtering of the pixels
+
+initialize the wrapping of the pixels
+
+initialize the pixel data \mbox{\Hypertarget{struct_pixel_buffer_ada8b571a542bdd0be9cbe29116aac7c8}\label{struct_pixel_buffer_ada8b571a542bdd0be9cbe29116aac7c8}} 
+\index{Pixel\+Buffer@{Pixel\+Buffer}!Pixel\+Buffer@{Pixel\+Buffer}}
+\index{Pixel\+Buffer@{Pixel\+Buffer}!Pixel\+Buffer@{Pixel\+Buffer}}
+\subsubsection{\texorpdfstring{Pixel\+Buffer()}{PixelBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Pixel\+Buffer\+::\+Pixel\+Buffer (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h,  }\item[{unsigned char}]{b,  }\item[{int}]{f,  }\item[{int}]{wr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+overloaded constructor 
+
+initialize the width of the buffer
+
+initialize the height of the buffer
+
+initialize the color depth of the pixels
+
+initialize the filtering of the pixels
+
+initialize the wrapping of the pixels
+
+initialize the pixel data 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_pixel_buffer_a426b4dd17e4f9d45e107f0390c0e87a9}\label{struct_pixel_buffer_a426b4dd17e4f9d45e107f0390c0e87a9}} 
+\index{Pixel\+Buffer@{Pixel\+Buffer}!get\+Pixel@{get\+Pixel}}
+\index{get\+Pixel@{get\+Pixel}!Pixel\+Buffer@{Pixel\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Pixel()}{getPixel()}}
+{\footnotesize\ttfamily \hyperlink{struct_r_g_b_a_color}{R\+G\+B\+A\+Color} Pixel\+Buffer\+::get\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the color of a pixel in the buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate of the pixel \\
+\hline
+{\em y} & the y coordinate of the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+color \hyperlink{struct_r_g_b_a_color}{R\+G\+B\+A\+Color} of the pixel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_pixel_buffer_a538a6b35401764c0eae72c3744b05cd5}\label{struct_pixel_buffer_a538a6b35401764c0eae72c3744b05cd5}} 
+\index{Pixel\+Buffer@{Pixel\+Buffer}!set\+Pixel@{set\+Pixel}}
+\index{set\+Pixel@{set\+Pixel}!Pixel\+Buffer@{Pixel\+Buffer}}
+\subsubsection{\texorpdfstring{set\+Pixel()}{setPixel()}}
+{\footnotesize\ttfamily void Pixel\+Buffer\+::set\+Pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{\hyperlink{struct_r_g_b_a_color}{R\+G\+B\+A\+Color}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set a pixel in the buffer to a certain color 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate of the pixel \\
+\hline
+{\em y} & the y coordinate of the pixel \\
+\hline
+{\em color} & \hyperlink{struct_r_g_b_a_color}{R\+G\+B\+A\+Color} of the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_pixel_buffer_aed6c6d8d7043e79be814be447dec108e}\label{struct_pixel_buffer_aed6c6d8d7043e79be814be447dec108e}} 
+\index{Pixel\+Buffer@{Pixel\+Buffer}!bitdepth@{bitdepth}}
+\index{bitdepth@{bitdepth}!Pixel\+Buffer@{Pixel\+Buffer}}
+\subsubsection{\texorpdfstring{bitdepth}{bitdepth}}
+{\footnotesize\ttfamily unsigned char Pixel\+Buffer\+::bitdepth}
+
+
+
+the size of the file 
+
+1 = grayscale 3 = 24 bit R\+GB 4 = 32 bit R\+G\+BA \mbox{\Hypertarget{struct_pixel_buffer_a849bcca202ec73555873cbc46b0f3cd0}\label{struct_pixel_buffer_a849bcca202ec73555873cbc46b0f3cd0}} 
+\index{Pixel\+Buffer@{Pixel\+Buffer}!filter@{filter}}
+\index{filter@{filter}!Pixel\+Buffer@{Pixel\+Buffer}}
+\subsubsection{\texorpdfstring{filter}{filter}}
+{\footnotesize\ttfamily int Pixel\+Buffer\+::filter}
+
+
+
+the filtering level of the pixel data 
+
+0 = none 1 = linear 2 = bilinear 3 = trilinear \mbox{\Hypertarget{struct_pixel_buffer_acb981d89a79a2ec8f755ee42c776552c}\label{struct_pixel_buffer_acb981d89a79a2ec8f755ee42c776552c}} 
+\index{Pixel\+Buffer@{Pixel\+Buffer}!wrap@{wrap}}
+\index{wrap@{wrap}!Pixel\+Buffer@{Pixel\+Buffer}}
+\subsubsection{\texorpdfstring{wrap}{wrap}}
+{\footnotesize\ttfamily int Pixel\+Buffer\+::wrap}
+
+
+
+the wrapping of the pixel data 
+
+0 = G\+L\+\_\+\+R\+E\+P\+E\+AT 1 = G\+L\+\_\+\+M\+I\+R\+R\+O\+R\+E\+D\+\_\+\+R\+E\+P\+E\+AT 2 = G\+L\+\_\+\+C\+L\+A\+M\+P\+\_\+\+T\+O\+\_\+\+E\+D\+GE 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{texture_8h}{texture.\+h}\end{DoxyCompactItemize}

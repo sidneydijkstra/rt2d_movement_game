@@ -1,0 +1,97 @@
+\hypertarget{class_renderer}{}\section{Renderer Class Reference}
+\label{class_renderer}\index{Renderer@{Renderer}}
+
+
+The \hyperlink{class_renderer}{Renderer} class renders meshes (vertices, normals, UV coordinates) from Sprites.  
+
+
+
+
+{\ttfamily \#include $<$renderer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_renderer_a7ebf46f54dab9905f79b80f7fddb76a6}\label{class_renderer_a7ebf46f54dab9905f79b80f7fddb76a6}} 
+\hyperlink{class_renderer_a7ebf46f54dab9905f79b80f7fddb76a6}{Renderer} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{class_renderer}{Renderer}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_renderer_afeee408862d5bd6255a6882d47e6d5cd}\label{class_renderer_afeee408862d5bd6255a6882d47e6d5cd}} 
+virtual \hyperlink{class_renderer_afeee408862d5bd6255a6882d47e6d5cd}{$\sim$\+Renderer} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \hyperlink{class_renderer}{Renderer}. \end{DoxyCompactList}\item 
+int \hyperlink{class_renderer_a609f1ee6a2e5033035eb47636d0901ad}{init} ()
+\begin{DoxyCompactList}\small\item\em Initialise the \hyperlink{class_renderer}{Renderer}. Create a Window with Open\+GL Context. \end{DoxyCompactList}\item 
+void \hyperlink{class_renderer_a6dc601fc4faf3ab41bd212f6f31eaf89}{render\+Scene} (\hyperlink{class_scene}{Scene} $\ast$scene)
+\begin{DoxyCompactList}\small\item\em Renders a \hyperlink{class_scene}{Scene} with all its children. \end{DoxyCompactList}\item 
+G\+L\+F\+Wwindow $\ast$ \hyperlink{class_renderer_aeaa64bb33b48726eaf294827ac12bb18}{window} ()
+\begin{DoxyCompactList}\small\item\em access the G\+L\+F\+Wwindow. \end{DoxyCompactList}\item 
+void \hyperlink{class_renderer_a40b6ff3f5a306181f0ddc04e47462f41}{cleanup} ()
+\begin{DoxyCompactList}\small\item\em cleanup (\+\_\+resman) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_renderer}{Renderer} class renders meshes (vertices, normals, UV coordinates) from Sprites. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_renderer_a40b6ff3f5a306181f0ddc04e47462f41}\label{class_renderer_a40b6ff3f5a306181f0ddc04e47462f41}} 
+\index{Renderer@{Renderer}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily void Renderer\+::cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+cleanup (\+\_\+resman) 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_renderer_a609f1ee6a2e5033035eb47636d0901ad}\label{class_renderer_a609f1ee6a2e5033035eb47636d0901ad}} 
+\index{Renderer@{Renderer}!init@{init}}
+\index{init@{init}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily int Renderer\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialise the \hyperlink{class_renderer}{Renderer}. Create a Window with Open\+GL Context. 
+
+\begin{DoxyReturn}{Returns}
+int (0 when successful, -\/1 when errors occurred) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_renderer_a6dc601fc4faf3ab41bd212f6f31eaf89}\label{class_renderer_a6dc601fc4faf3ab41bd212f6f31eaf89}} 
+\index{Renderer@{Renderer}!render\+Scene@{render\+Scene}}
+\index{render\+Scene@{render\+Scene}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{render\+Scene()}{renderScene()}}
+{\footnotesize\ttfamily void Renderer\+::render\+Scene (\begin{DoxyParamCaption}\item[{\hyperlink{class_scene}{Scene} $\ast$}]{scene }\end{DoxyParamCaption})}
+
+
+
+Renders a \hyperlink{class_scene}{Scene} with all its children. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & The \hyperlink{class_scene}{Scene} that needs to be rendered \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_renderer_aeaa64bb33b48726eaf294827ac12bb18}\label{class_renderer_aeaa64bb33b48726eaf294827ac12bb18}} 
+\index{Renderer@{Renderer}!window@{window}}
+\index{window@{window}!Renderer@{Renderer}}
+\subsubsection{\texorpdfstring{window()}{window()}}
+{\footnotesize\ttfamily G\+L\+F\+Wwindow$\ast$ Renderer\+::window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+access the G\+L\+F\+Wwindow. 
+
+\begin{DoxyReturn}{Returns}
+G\+L\+F\+Wwindow$\ast$ \+\_\+window 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{renderer_8h}{renderer.\+h}\item 
+renderer.\+cpp\end{DoxyCompactItemize}

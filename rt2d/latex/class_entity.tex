@@ -1,0 +1,512 @@
+\hypertarget{class_entity}{}\section{Entity Class Reference}
+\label{class_entity}\index{Entity@{Entity}}
+
+
+The \hyperlink{class_entity}{Entity} class is the Base class for the elements in your \hyperlink{class_scene}{Scene}.  
+
+
+
+
+{\ttfamily \#include $<$entity.\+h$>$}
+
+Inheritance diagram for Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entity_a980f368aa07ce358583982821533a54a}\label{class_entity_a980f368aa07ce358583982821533a54a}} 
+\hyperlink{class_entity_a980f368aa07ce358583982821533a54a}{Entity} ()
+\begin{DoxyCompactList}\small\item\em Constructor of an \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}\label{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}} 
+virtual \hyperlink{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}{$\sim$\+Entity} ()
+\begin{DoxyCompactList}\small\item\em Destructor of an \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_entity_a7082aeb577c91707cc28edce571320f7}{update} (float delta\+Time)=0
+\begin{DoxyCompactList}\small\item\em update this \hyperlink{class_entity}{Entity}. This function is Pure virtual. User M\+U\+ST implement this in subclass. \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_a445e5c82020eae36a145a692ff8482bc}{add\+Child} (\hyperlink{class_entity}{Entity} $\ast$child)
+\begin{DoxyCompactList}\small\item\em add an \hyperlink{class_entity}{Entity} as a child of this \hyperlink{class_entity}{Entity}. Defines the data structure (parent/children relationship) \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_a45d5a3b92478ad8b4fb305b9b3e08c7a}{remove\+Child} (\hyperlink{class_entity}{Entity} $\ast$child)
+\begin{DoxyCompactList}\small\item\em remove this \hyperlink{class_entity}{Entity} from list of children. \end{DoxyCompactList}\item 
+\hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_entity_a86a7a735f9046c4ff3800a80f8ffd1ac}{get\+Child} (unsigned int i)
+\begin{DoxyCompactList}\small\item\em get nth \hyperlink{class_entity}{Entity} from list of children. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{class_entity}{Entity} $\ast$ $>$ \& \hyperlink{class_entity_a1975d28f88ddd1afb83332245b194c79}{children} ()
+\begin{DoxyCompactList}\small\item\em get the list of children. \end{DoxyCompactList}\item 
+\hyperlink{class_sprite}{Sprite} $\ast$ \hyperlink{class_entity_a766b6c5da328efaa419bebe4f67479b9}{sprite} ()
+\begin{DoxyCompactList}\small\item\em get the \hyperlink{class_sprite}{Sprite} from this \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_ae35b690cfec7ef9a0061338d7b83cfc4}{add\+Sprite} (\hyperlink{class_sprite}{Sprite} $\ast$spr)
+\begin{DoxyCompactList}\small\item\em add a \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity} by Sprite$\ast$. \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_ab2501f9df0591cc5fd0535b15b2bb818}{add\+Sprite} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em add a \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity} by filename. \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_a5017dd79d0edad03fb7bd90df7eea867}{add\+Sprite} (const std\+::string \&filename, float pivotx, float pivoty)
+\begin{DoxyCompactList}\small\item\em add a \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_ae1a2eddd848404c8a9254f11036d00f5}{add\+Sprite} (const std\+::string \&filename, float pivotx, float pivoty, int filter, int wrap)
+\begin{DoxyCompactList}\small\item\em add a \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_a733aebaa5220f6dbd9b147aa8a9f6a3c}{add\+Sprite\+Sheet} (const std\+::string \&filename, int u, int v)
+\begin{DoxyCompactList}\small\item\em add a Sprite\+Sheet to this \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_a3974e092fbb0f5984bf6806f83b62e33}{add\+Grid} (const std\+::string \&filename, int u, int v, int cols, int rows, int sizex, int sizey)
+\begin{DoxyCompactList}\small\item\em add a Grid as a Spritebatch to this \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_a5a45a17006bcba507ffeeb33ddd6269e}{add\+Circle\+Sprite} (const std\+::string \&filename, int radius, int segments)
+\begin{DoxyCompactList}\small\item\em add a Circular \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity} by filename. \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_a30b6c9e7d43616a622efa168b0b143e1}{add\+Segment\+Sprite} (const std\+::string \&filename, int radius, int segments, int which)
+\begin{DoxyCompactList}\small\item\em add a Circular \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity} by filename. \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_adefc8fe3904ba419ac580c6aab09d770}{add\+Dynamic\+Sprite} (\hyperlink{struct_pixel_buffer}{Pixel\+Buffer} $\ast$pixels)
+\begin{DoxyCompactList}\small\item\em add Dynamic \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity} by Pixel\+Buffer$\ast$. \end{DoxyCompactList}\item 
+\hyperlink{class_line}{Line} $\ast$ \hyperlink{class_entity_a81cacd62804c930558bc2ff3f0c927ae}{line} ()
+\begin{DoxyCompactList}\small\item\em get the \hyperlink{class_line}{Line} from this \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_a9acaf95e1437e0d8c068e3468846fefa}{add\+Line} (\hyperlink{class_line}{Line} $\ast$\hyperlink{class_entity_a81cacd62804c930558bc2ff3f0c927ae}{line})
+\begin{DoxyCompactList}\small\item\em add a \hyperlink{class_line}{Line} to this \hyperlink{class_entity}{Entity} by Line$\ast$. \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_a9383f0d8ce804b216fc6e8164b4466a5}{add\+Line} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em add a \hyperlink{class_line}{Line} to this \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_sprite}{Sprite} $\ast$ $>$ \& \hyperlink{class_entity_a103d3fc8fff63075df60502c1966a7bc}{spritebatch} ()
+\begin{DoxyCompactList}\small\item\em get the spritebatch of this \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+int \hyperlink{class_entity_ad4f911b665f003d191c2940d325da6d8}{guid} ()
+\begin{DoxyCompactList}\small\item\em get the guid of this \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+\hyperlink{class_entity}{Entity} $\ast$ \hyperlink{class_entity_a9e2f02efca39cd7c4eca36e662372c25}{parent} ()
+\begin{DoxyCompactList}\small\item\em get the parent of this \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+\hyperlink{pointx_8h_aca903a92c8ced8823fea9fac7e23677a}{Point2} \hyperlink{class_entity_a85ae0243e89910d56dd7140c8f735f41}{worldpos} ()
+\begin{DoxyCompactList}\small\item\em get the world position of this \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entity_af423990bd8393e6cbec1acf1c0b397ce}\label{class_entity_af423990bd8393e6cbec1acf1c0b397ce}} 
+\hyperlink{pointx_8h_aca903a92c8ced8823fea9fac7e23677a}{Point2} \hyperlink{class_entity_af423990bd8393e6cbec1acf1c0b397ce}{position}
+\begin{DoxyCompactList}\small\item\em The position of the \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entity_aa384ccfdaba36b1ff5f5db51ec3cdcb1}\label{class_entity_aa384ccfdaba36b1ff5f5db51ec3cdcb1}} 
+float \hyperlink{class_entity_aa384ccfdaba36b1ff5f5db51ec3cdcb1}{rotation}
+\begin{DoxyCompactList}\small\item\em The rotation of the \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entity_a286b63dabacf915914be06dfd37c0219}\label{class_entity_a286b63dabacf915914be06dfd37c0219}} 
+\hyperlink{pointx_8h_aca903a92c8ced8823fea9fac7e23677a}{Point2} \hyperlink{class_entity_a286b63dabacf915914be06dfd37c0219}{scale}
+\begin{DoxyCompactList}\small\item\em The scale of the \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entity_aa8297d9903ba65954f51e400da52c3a9}\label{class_entity_aa8297d9903ba65954f51e400da52c3a9}} 
+\hyperlink{pointx_8h_aca903a92c8ced8823fea9fac7e23677a}{Point2} \hyperlink{class_entity_aa8297d9903ba65954f51e400da52c3a9}{\+\_\+worldpos}
+\begin{DoxyCompactList}\small\item\em The position of the \hyperlink{class_entity}{Entity} in the real world. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entity_a3927fd7358c34de5e2783bdf912cb9ed}\label{class_entity_a3927fd7358c34de5e2783bdf912cb9ed}} 
+std\+::vector$<$ \hyperlink{class_sprite}{Sprite} $\ast$ $>$ \hyperlink{class_entity_a3927fd7358c34de5e2783bdf912cb9ed}{\+\_\+spritebatch}
+\begin{DoxyCompactList}\small\item\em The \+\_\+spritebatch of this \hyperlink{class_entity}{Entity}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entity_a70538530bc36e033e360880ef311df61}\label{class_entity_a70538530bc36e033e360880ef311df61}} 
+class {\bfseries Renderer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_entity}{Entity} class is the Base class for the elements in your \hyperlink{class_scene}{Scene}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_entity_a445e5c82020eae36a145a692ff8482bc}\label{class_entity_a445e5c82020eae36a145a692ff8482bc}} 
+\index{Entity@{Entity}!add\+Child@{add\+Child}}
+\index{add\+Child@{add\+Child}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{add\+Child()}{addChild()}}
+{\footnotesize\ttfamily void Entity\+::add\+Child (\begin{DoxyParamCaption}\item[{\hyperlink{class_entity}{Entity} $\ast$}]{child }\end{DoxyParamCaption})}
+
+
+
+add an \hyperlink{class_entity}{Entity} as a child of this \hyperlink{class_entity}{Entity}. Defines the data structure (parent/children relationship) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em child} & The \hyperlink{class_entity}{Entity} you want to add as a child. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a5a45a17006bcba507ffeeb33ddd6269e}\label{class_entity_a5a45a17006bcba507ffeeb33ddd6269e}} 
+\index{Entity@{Entity}!add\+Circle\+Sprite@{add\+Circle\+Sprite}}
+\index{add\+Circle\+Sprite@{add\+Circle\+Sprite}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{add\+Circle\+Sprite()}{addCircleSprite()}}
+{\footnotesize\ttfamily void Entity\+::add\+Circle\+Sprite (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{int}]{radius,  }\item[{int}]{segments }\end{DoxyParamCaption})}
+
+
+
+add a Circular \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity} by filename. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the image you want to add as a \hyperlink{class_sprite}{Sprite}. \\
+\hline
+{\em radius} & The radius of the circle. \\
+\hline
+{\em segments} & The number of segments of the circle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_adefc8fe3904ba419ac580c6aab09d770}\label{class_entity_adefc8fe3904ba419ac580c6aab09d770}} 
+\index{Entity@{Entity}!add\+Dynamic\+Sprite@{add\+Dynamic\+Sprite}}
+\index{add\+Dynamic\+Sprite@{add\+Dynamic\+Sprite}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{add\+Dynamic\+Sprite()}{addDynamicSprite()}}
+{\footnotesize\ttfamily void Entity\+::add\+Dynamic\+Sprite (\begin{DoxyParamCaption}\item[{\hyperlink{struct_pixel_buffer}{Pixel\+Buffer} $\ast$}]{pixels }\end{DoxyParamCaption})}
+
+
+
+add Dynamic \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity} by Pixel\+Buffer$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixels} & A pointer to a \hyperlink{struct_pixel_buffer}{Pixel\+Buffer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a3974e092fbb0f5984bf6806f83b62e33}\label{class_entity_a3974e092fbb0f5984bf6806f83b62e33}} 
+\index{Entity@{Entity}!add\+Grid@{add\+Grid}}
+\index{add\+Grid@{add\+Grid}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{add\+Grid()}{addGrid()}}
+{\footnotesize\ttfamily void Entity\+::add\+Grid (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{int}]{u,  }\item[{int}]{v,  }\item[{int}]{cols,  }\item[{int}]{rows,  }\item[{int}]{sizex,  }\item[{int}]{sizey }\end{DoxyParamCaption})}
+
+
+
+add a Grid as a Spritebatch to this \hyperlink{class_entity}{Entity}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the image. \\
+\hline
+{\em u} & number of horizontal textures \\
+\hline
+{\em v} & number of vertical textures \\
+\hline
+{\em cols} & number of cells \\
+\hline
+{\em rows} & number of vertical cells \\
+\hline
+{\em sizex} & horizontal size of a cell \\
+\hline
+{\em sizey} & vertical size of a cell \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a9acaf95e1437e0d8c068e3468846fefa}\label{class_entity_a9acaf95e1437e0d8c068e3468846fefa}} 
+\index{Entity@{Entity}!add\+Line@{add\+Line}}
+\index{add\+Line@{add\+Line}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{add\+Line()}{addLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Entity\+::add\+Line (\begin{DoxyParamCaption}\item[{\hyperlink{class_line}{Line} $\ast$}]{line }\end{DoxyParamCaption})}
+
+
+
+add a \hyperlink{class_line}{Line} to this \hyperlink{class_entity}{Entity} by Line$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & A pointer to a \hyperlink{class_line}{Line}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a9383f0d8ce804b216fc6e8164b4466a5}\label{class_entity_a9383f0d8ce804b216fc6e8164b4466a5}} 
+\index{Entity@{Entity}!add\+Line@{add\+Line}}
+\index{add\+Line@{add\+Line}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{add\+Line()}{addLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Entity\+::add\+Line (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+add a \hyperlink{class_line}{Line} to this \hyperlink{class_entity}{Entity}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the line you want to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a30b6c9e7d43616a622efa168b0b143e1}\label{class_entity_a30b6c9e7d43616a622efa168b0b143e1}} 
+\index{Entity@{Entity}!add\+Segment\+Sprite@{add\+Segment\+Sprite}}
+\index{add\+Segment\+Sprite@{add\+Segment\+Sprite}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{add\+Segment\+Sprite()}{addSegmentSprite()}}
+{\footnotesize\ttfamily void Entity\+::add\+Segment\+Sprite (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{int}]{radius,  }\item[{int}]{segments,  }\item[{int}]{which }\end{DoxyParamCaption})}
+
+
+
+add a Circular \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity} by filename. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the image you want to add as a \hyperlink{class_sprite}{Sprite}. \\
+\hline
+{\em radius} & The radius of the circle. \\
+\hline
+{\em segments} & The number of segments of the circle. \\
+\hline
+{\em which} & which segment (0-\/5 if hexagon). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_ae35b690cfec7ef9a0061338d7b83cfc4}\label{class_entity_ae35b690cfec7ef9a0061338d7b83cfc4}} 
+\index{Entity@{Entity}!add\+Sprite@{add\+Sprite}}
+\index{add\+Sprite@{add\+Sprite}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{add\+Sprite()}{addSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Entity\+::add\+Sprite (\begin{DoxyParamCaption}\item[{\hyperlink{class_sprite}{Sprite} $\ast$}]{spr }\end{DoxyParamCaption})}
+
+
+
+add a \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity} by Sprite$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spr} & A pointer to a \hyperlink{class_sprite}{Sprite}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_ab2501f9df0591cc5fd0535b15b2bb818}\label{class_entity_ab2501f9df0591cc5fd0535b15b2bb818}} 
+\index{Entity@{Entity}!add\+Sprite@{add\+Sprite}}
+\index{add\+Sprite@{add\+Sprite}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{add\+Sprite()}{addSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Entity\+::add\+Sprite (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+add a \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity} by filename. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the image you want to add as a \hyperlink{class_sprite}{Sprite}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a5017dd79d0edad03fb7bd90df7eea867}\label{class_entity_a5017dd79d0edad03fb7bd90df7eea867}} 
+\index{Entity@{Entity}!add\+Sprite@{add\+Sprite}}
+\index{add\+Sprite@{add\+Sprite}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{add\+Sprite()}{addSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Entity\+::add\+Sprite (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{float}]{pivotx,  }\item[{float}]{pivoty }\end{DoxyParamCaption})}
+
+
+
+add a \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the image you want to add as a \hyperlink{class_sprite}{Sprite}. \\
+\hline
+{\em pivotx} & The x component of the pivotpoint. \\
+\hline
+{\em pivoty} & The y component of the pivotpoint. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_ae1a2eddd848404c8a9254f11036d00f5}\label{class_entity_ae1a2eddd848404c8a9254f11036d00f5}} 
+\index{Entity@{Entity}!add\+Sprite@{add\+Sprite}}
+\index{add\+Sprite@{add\+Sprite}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{add\+Sprite()}{addSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Entity\+::add\+Sprite (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{float}]{pivotx,  }\item[{float}]{pivoty,  }\item[{int}]{filter,  }\item[{int}]{wrap }\end{DoxyParamCaption})}
+
+
+
+add a \hyperlink{class_sprite}{Sprite} to this \hyperlink{class_entity}{Entity}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the image you want to add as a \hyperlink{class_sprite}{Sprite}. \\
+\hline
+{\em pivotx} & The x component of the pivotpoint. \\
+\hline
+{\em pivoty} & The y component of the pivotpoint. \\
+\hline
+{\em filter} & The filter. \\
+\hline
+{\em wrap} & The wrapping. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a733aebaa5220f6dbd9b147aa8a9f6a3c}\label{class_entity_a733aebaa5220f6dbd9b147aa8a9f6a3c}} 
+\index{Entity@{Entity}!add\+Sprite\+Sheet@{add\+Sprite\+Sheet}}
+\index{add\+Sprite\+Sheet@{add\+Sprite\+Sheet}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{add\+Sprite\+Sheet()}{addSpriteSheet()}}
+{\footnotesize\ttfamily void Entity\+::add\+Sprite\+Sheet (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{int}]{u,  }\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+add a Sprite\+Sheet to this \hyperlink{class_entity}{Entity}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the image you want to add as a Sprite\+Sheet. \\
+\hline
+{\em u} & number of horizontal textures \\
+\hline
+{\em v} & number of vertical textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a1975d28f88ddd1afb83332245b194c79}\label{class_entity_a1975d28f88ddd1afb83332245b194c79}} 
+\index{Entity@{Entity}!children@{children}}
+\index{children@{children}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{children()}{children()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{class_entity}{Entity}$\ast$$>$\& Entity\+::children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the list of children. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Entity$\ast$$>$\& \+\_\+children 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a86a7a735f9046c4ff3800a80f8ffd1ac}\label{class_entity_a86a7a735f9046c4ff3800a80f8ffd1ac}} 
+\index{Entity@{Entity}!get\+Child@{get\+Child}}
+\index{get\+Child@{get\+Child}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{get\+Child()}{getChild()}}
+{\footnotesize\ttfamily \hyperlink{class_entity}{Entity} $\ast$ Entity\+::get\+Child (\begin{DoxyParamCaption}\item[{unsigned int}]{i }\end{DoxyParamCaption})}
+
+
+
+get nth \hyperlink{class_entity}{Entity} from list of children. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The id of the \hyperlink{class_entity}{Entity} you want to get. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Entity$\ast$ child 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_ad4f911b665f003d191c2940d325da6d8}\label{class_entity_ad4f911b665f003d191c2940d325da6d8}} 
+\index{Entity@{Entity}!guid@{guid}}
+\index{guid@{guid}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{guid()}{guid()}}
+{\footnotesize\ttfamily int Entity\+::guid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the guid of this \hyperlink{class_entity}{Entity}. 
+
+\begin{DoxyReturn}{Returns}
+int \+\_\+guid 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a81cacd62804c930558bc2ff3f0c927ae}\label{class_entity_a81cacd62804c930558bc2ff3f0c927ae}} 
+\index{Entity@{Entity}!line@{line}}
+\index{line@{line}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{line()}{line()}}
+{\footnotesize\ttfamily \hyperlink{class_line}{Line}$\ast$ Entity\+::line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the \hyperlink{class_line}{Line} from this \hyperlink{class_entity}{Entity}. 
+
+\begin{DoxyReturn}{Returns}
+Line$\ast$ \+\_\+line 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a9e2f02efca39cd7c4eca36e662372c25}\label{class_entity_a9e2f02efca39cd7c4eca36e662372c25}} 
+\index{Entity@{Entity}!parent@{parent}}
+\index{parent@{parent}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{parent()}{parent()}}
+{\footnotesize\ttfamily \hyperlink{class_entity}{Entity}$\ast$ Entity\+::parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the parent of this \hyperlink{class_entity}{Entity}. 
+
+\begin{DoxyReturn}{Returns}
+Entity$\ast$ \+\_\+parent 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a45d5a3b92478ad8b4fb305b9b3e08c7a}\label{class_entity_a45d5a3b92478ad8b4fb305b9b3e08c7a}} 
+\index{Entity@{Entity}!remove\+Child@{remove\+Child}}
+\index{remove\+Child@{remove\+Child}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{remove\+Child()}{removeChild()}}
+{\footnotesize\ttfamily void Entity\+::remove\+Child (\begin{DoxyParamCaption}\item[{\hyperlink{class_entity}{Entity} $\ast$}]{child }\end{DoxyParamCaption})}
+
+
+
+remove this \hyperlink{class_entity}{Entity} from list of children. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em child} & The \hyperlink{class_entity}{Entity} you want to remove from your children. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a766b6c5da328efaa419bebe4f67479b9}\label{class_entity_a766b6c5da328efaa419bebe4f67479b9}} 
+\index{Entity@{Entity}!sprite@{sprite}}
+\index{sprite@{sprite}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{sprite()}{sprite()}}
+{\footnotesize\ttfamily \hyperlink{class_sprite}{Sprite}$\ast$ Entity\+::sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the \hyperlink{class_sprite}{Sprite} from this \hyperlink{class_entity}{Entity}. 
+
+\begin{DoxyReturn}{Returns}
+Sprite$\ast$ \+\_\+sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a103d3fc8fff63075df60502c1966a7bc}\label{class_entity_a103d3fc8fff63075df60502c1966a7bc}} 
+\index{Entity@{Entity}!spritebatch@{spritebatch}}
+\index{spritebatch@{spritebatch}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{spritebatch()}{spritebatch()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_sprite}{Sprite}$\ast$$>$\& Entity\+::spritebatch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the spritebatch of this \hyperlink{class_entity}{Entity}. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Sprite$\ast$$>$\& \+\_\+spritebatch 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a7082aeb577c91707cc28edce571320f7}\label{class_entity_a7082aeb577c91707cc28edce571320f7}} 
+\index{Entity@{Entity}!update@{update}}
+\index{update@{update}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Entity\+::update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+update this \hyperlink{class_entity}{Entity}. This function is Pure virtual. User M\+U\+ST implement this in subclass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The time that\textquotesingle{}s passed since the last update. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_text_a5604f1f74fd487d2972d024575497484}{Text}.
+
+\mbox{\Hypertarget{class_entity_a85ae0243e89910d56dd7140c8f735f41}\label{class_entity_a85ae0243e89910d56dd7140c8f735f41}} 
+\index{Entity@{Entity}!worldpos@{worldpos}}
+\index{worldpos@{worldpos}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{worldpos()}{worldpos()}}
+{\footnotesize\ttfamily \hyperlink{pointx_8h_aca903a92c8ced8823fea9fac7e23677a}{Point2} Entity\+::worldpos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the world position of this \hyperlink{class_entity}{Entity}. 
+
+\begin{DoxyReturn}{Returns}
+Point2 \+\_\+worldpos 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{entity_8h}{entity.\+h}\item 
+entity.\+cpp\end{DoxyCompactItemize}

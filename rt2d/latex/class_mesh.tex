@@ -1,0 +1,197 @@
+\hypertarget{class_mesh}{}\section{Mesh Class Reference}
+\label{class_mesh}\index{Mesh@{Mesh}}
+
+
+The \hyperlink{class_mesh}{Mesh} class generates meshes (vertices, normals, UV coordinates).  
+
+
+
+
+{\ttfamily \#include $<$mesh.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mesh_a2af137f1571af89172b9c102302c416b}{Mesh} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{class_mesh}{Mesh}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mesh_a5efe4da1a4c0971cfb037bd70304c303}\label{class_mesh_a5efe4da1a4c0971cfb037bd70304c303}} 
+virtual \hyperlink{class_mesh_a5efe4da1a4c0971cfb037bd70304c303}{$\sim$\+Mesh} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \hyperlink{class_mesh}{Mesh}. \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{class_mesh_a6b0627f41c3e14e8091972ca949d4ecc}{vertexbuffer} ()
+\begin{DoxyCompactList}\small\item\em get the vertices of the \hyperlink{class_mesh}{Mesh} \end{DoxyCompactList}\item 
+G\+Luint \hyperlink{class_mesh_a0c6e766bd06430ca8ad15a429c40311f}{uvbuffer} ()
+\begin{DoxyCompactList}\small\item\em get the UV\textquotesingle{}s of the \hyperlink{class_mesh}{Mesh} \end{DoxyCompactList}\item 
+void \hyperlink{class_mesh_a91d654fb3415a61176c9b472bcbd3b56}{generate\+Sprite\+Mesh} (int width, int height, float pivotx, float pivoty, float uvwidth, float uvheight)
+\begin{DoxyCompactList}\small\item\em fills vertices, normals and UV\textquotesingle{}s with values for a \hyperlink{class_sprite}{Sprite} \hyperlink{class_mesh}{Mesh} \end{DoxyCompactList}\item 
+void \hyperlink{class_mesh_ab8b53063bcbe830643a0cfae16479319}{generate\+Line\+Mesh} (\hyperlink{class_line}{Line} $\ast$line)
+\begin{DoxyCompactList}\small\item\em fills vertices with values for a \hyperlink{class_line}{Line} \hyperlink{class_mesh}{Mesh} \end{DoxyCompactList}\item 
+void \hyperlink{class_mesh_a06e38fa57785adc606830de291f3235e}{generate\+Circle\+Mesh} (int radius, int segments, float uvwidth, float uvheight)
+\begin{DoxyCompactList}\small\item\em Create a circle of triangles. \end{DoxyCompactList}\item 
+void \hyperlink{class_mesh_aec5d0429ff6899aabe39142d6bea5218}{generate\+Segment\+Mesh} (int radius, int segments, int which)
+\begin{DoxyCompactList}\small\item\em Create a circle of triangles. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_mesh_a42d9946683e647e3a44df79e3d5cc11f}{numverts} ()
+\begin{DoxyCompactList}\small\item\em Get the number of vertices in the \hyperlink{class_mesh}{Mesh}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_mesh}{Mesh} class generates meshes (vertices, normals, UV coordinates). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mesh_a2af137f1571af89172b9c102302c416b}\label{class_mesh_a2af137f1571af89172b9c102302c416b}} 
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\subsubsection{\texorpdfstring{Mesh()}{Mesh()}}
+{\footnotesize\ttfamily Mesh\+::\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor of the \hyperlink{class_mesh}{Mesh}. 
+
+This file is part of R\+T2D, a 2D Open\+GL framework.
+
+
+\begin{DoxyItemize}
+\item Copyright 2015 Rik Teerling \href{mailto:rik@onandoffables.com}{\tt rik@onandoffables.\+com}
+\begin{DoxyItemize}
+\item Initial commit 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mesh_a06e38fa57785adc606830de291f3235e}\label{class_mesh_a06e38fa57785adc606830de291f3235e}} 
+\index{Mesh@{Mesh}!generate\+Circle\+Mesh@{generate\+Circle\+Mesh}}
+\index{generate\+Circle\+Mesh@{generate\+Circle\+Mesh}!Mesh@{Mesh}}
+\subsubsection{\texorpdfstring{generate\+Circle\+Mesh()}{generateCircleMesh()}}
+{\footnotesize\ttfamily void Mesh\+::generate\+Circle\+Mesh (\begin{DoxyParamCaption}\item[{int}]{radius,  }\item[{int}]{segments,  }\item[{float}]{uvwidth,  }\item[{float}]{uvheight }\end{DoxyParamCaption})}
+
+
+
+Create a circle of triangles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & the radius of the circle \\
+\hline
+{\em segments} & the number of segments \\
+\hline
+{\em uvwidth} & texture size \\
+\hline
+{\em uvheight} & texture size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mesh_ab8b53063bcbe830643a0cfae16479319}\label{class_mesh_ab8b53063bcbe830643a0cfae16479319}} 
+\index{Mesh@{Mesh}!generate\+Line\+Mesh@{generate\+Line\+Mesh}}
+\index{generate\+Line\+Mesh@{generate\+Line\+Mesh}!Mesh@{Mesh}}
+\subsubsection{\texorpdfstring{generate\+Line\+Mesh()}{generateLineMesh()}}
+{\footnotesize\ttfamily void Mesh\+::generate\+Line\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{class_line}{Line} $\ast$}]{line }\end{DoxyParamCaption})}
+
+
+
+fills vertices with values for a \hyperlink{class_line}{Line} \hyperlink{class_mesh}{Mesh} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & a \hyperlink{class_line}{Line} pointer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mesh_aec5d0429ff6899aabe39142d6bea5218}\label{class_mesh_aec5d0429ff6899aabe39142d6bea5218}} 
+\index{Mesh@{Mesh}!generate\+Segment\+Mesh@{generate\+Segment\+Mesh}}
+\index{generate\+Segment\+Mesh@{generate\+Segment\+Mesh}!Mesh@{Mesh}}
+\subsubsection{\texorpdfstring{generate\+Segment\+Mesh()}{generateSegmentMesh()}}
+{\footnotesize\ttfamily void Mesh\+::generate\+Segment\+Mesh (\begin{DoxyParamCaption}\item[{int}]{radius,  }\item[{int}]{segments,  }\item[{int}]{which }\end{DoxyParamCaption})}
+
+
+
+Create a circle of triangles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & the radius of the circle \\
+\hline
+{\em segments} & the number of segments (6 if hexagon) \\
+\hline
+{\em which} & which segment (0-\/5 if hexagon) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mesh_a91d654fb3415a61176c9b472bcbd3b56}\label{class_mesh_a91d654fb3415a61176c9b472bcbd3b56}} 
+\index{Mesh@{Mesh}!generate\+Sprite\+Mesh@{generate\+Sprite\+Mesh}}
+\index{generate\+Sprite\+Mesh@{generate\+Sprite\+Mesh}!Mesh@{Mesh}}
+\subsubsection{\texorpdfstring{generate\+Sprite\+Mesh()}{generateSpriteMesh()}}
+{\footnotesize\ttfamily void Mesh\+::generate\+Sprite\+Mesh (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{float}]{pivotx,  }\item[{float}]{pivoty,  }\item[{float}]{uvwidth,  }\item[{float}]{uvheight }\end{DoxyParamCaption})}
+
+
+
+fills vertices, normals and UV\textquotesingle{}s with values for a \hyperlink{class_sprite}{Sprite} \hyperlink{class_mesh}{Mesh} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the width of the \hyperlink{class_sprite}{Sprite} \\
+\hline
+{\em height} & the height of the \hyperlink{class_sprite}{Sprite} \\
+\hline
+{\em pivotx} & the x component of the pivot of the \hyperlink{class_sprite}{Sprite} \\
+\hline
+{\em pivoty} & the y component of the pivot of the \hyperlink{class_sprite}{Sprite} \\
+\hline
+{\em uvwidth} & 1.\+0f=full texture, 0.\+5f=2x2 texture, 0.\+25f=4x4 texture etc. \\
+\hline
+{\em uvheight} & 1.\+0f=full texture, 0.\+5f=2x2 texture, 0.\+25f=4x4 texture etc. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mesh_a42d9946683e647e3a44df79e3d5cc11f}\label{class_mesh_a42d9946683e647e3a44df79e3d5cc11f}} 
+\index{Mesh@{Mesh}!numverts@{numverts}}
+\index{numverts@{numverts}!Mesh@{Mesh}}
+\subsubsection{\texorpdfstring{numverts()}{numverts()}}
+{\footnotesize\ttfamily unsigned int Mesh\+::numverts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of vertices in the \hyperlink{class_mesh}{Mesh}. 
+
+\begin{DoxyReturn}{Returns}
+unsigned int \+\_\+numverts 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mesh_a0c6e766bd06430ca8ad15a429c40311f}\label{class_mesh_a0c6e766bd06430ca8ad15a429c40311f}} 
+\index{Mesh@{Mesh}!uvbuffer@{uvbuffer}}
+\index{uvbuffer@{uvbuffer}!Mesh@{Mesh}}
+\subsubsection{\texorpdfstring{uvbuffer()}{uvbuffer()}}
+{\footnotesize\ttfamily G\+Luint Mesh\+::uvbuffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the UV\textquotesingle{}s of the \hyperlink{class_mesh}{Mesh} 
+
+\begin{DoxyReturn}{Returns}
+G\+Luint \+\_\+uvbuffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mesh_a6b0627f41c3e14e8091972ca949d4ecc}\label{class_mesh_a6b0627f41c3e14e8091972ca949d4ecc}} 
+\index{Mesh@{Mesh}!vertexbuffer@{vertexbuffer}}
+\index{vertexbuffer@{vertexbuffer}!Mesh@{Mesh}}
+\subsubsection{\texorpdfstring{vertexbuffer()}{vertexbuffer()}}
+{\footnotesize\ttfamily G\+Luint Mesh\+::vertexbuffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the vertices of the \hyperlink{class_mesh}{Mesh} 
+
+\begin{DoxyReturn}{Returns}
+G\+Luint \+\_\+vertexbuffer 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mesh_8h}{mesh.\+h}\item 
+mesh.\+cpp\end{DoxyCompactItemize}

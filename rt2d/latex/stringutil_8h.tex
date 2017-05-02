@@ -1,0 +1,53 @@
+\hypertarget{stringutil_8h}{}\section{stringutil.\+h File Reference}
+\label{stringutil_8h}\index{stringutil.\+h@{stringutil.\+h}}
+
+
+The stringutil header file.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \hyperlink{stringutil_8h_a3453bbc562324694176a7f53467233b6}{rt2d\+::to\+\_\+string} (T val)
+\begin{DoxyCompactList}\small\item\em converts any value to a string \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The stringutil header file. 
+
+This file is part of R\+T2D, a 2D Open\+GL framework.
+
+
+\begin{DoxyItemize}
+\item Copyright 2015 Rik Teerling \href{mailto:rik@onandoffables.com}{\tt rik@onandoffables.\+com}
+\begin{DoxyItemize}
+\item Initial commit
+\item \mbox{[}V\+Zout\mbox{]} Work around Min\+GW bug.
+\begin{DoxyItemize}
+\item \href{https://gcc.gnu.org/bugzilla/show_bug.cgi?id=52015}{\tt https\+://gcc.\+gnu.\+org/bugzilla/show\+\_\+bug.\+cgi?id=52015} 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{stringutil_8h_file_a3453bbc562324694176a7f53467233b6}\label{stringutil_8h_file_a3453bbc562324694176a7f53467233b6}} 
+\index{stringutil.\+h@{stringutil.\+h}!to\+\_\+string@{to\+\_\+string}}
+\index{to\+\_\+string@{to\+\_\+string}!stringutil.\+h@{stringutil.\+h}}
+\subsubsection{\texorpdfstring{to\+\_\+string()}{to\_string()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::string rt2d\+::to\+\_\+string (\begin{DoxyParamCaption}\item[{T}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+converts any value to a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & the value that needs to be converted to a string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+temp\+\_\+str the returned string 
+\end{DoxyReturn}

@@ -1,0 +1,125 @@
+\hypertarget{util_8h}{}\section{util.\+h File Reference}
+\label{util_8h}\index{util.\+h@{util.\+h}}
+
+
+The util header file.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{util_8h_aa63d17e0a4788f18c929019202569a4e}{low\+Byte} (uint16\+\_\+t wrd)
+\begin{DoxyCompactList}\small\item\em returns the low byte of a word \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{util_8h_a936a30ab66e38c46dbf84ff8a22bcbf7}{high\+Byte} (uint16\+\_\+t wrd)
+\begin{DoxyCompactList}\small\item\em returns the high byte of a word \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{util_8h_a118876d52f26322c38d8d5495f987651}{make\+Word} (unsigned char high, unsigned char low)
+\begin{DoxyCompactList}\small\item\em returns a word made of two bytes \end{DoxyCompactList}\item 
+long \hyperlink{util_8h_aada2d75bc8a8c6eb845bd940eadfa3fd}{map} (long x, long in\+\_\+min, long in\+\_\+max, long out\+\_\+min, long out\+\_\+max)
+\begin{DoxyCompactList}\small\item\em maps a value from 1 range to another usage example\+: int val = map(973, 0, 1023, 0, 255); // returns\+: 242 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The util header file. 
+
+This file is part of R\+T2D, a 2D Open\+GL framework.
+
+
+\begin{DoxyItemize}
+\item Copyright 2015 Rik Teerling \href{mailto:rik@onandoffables.com}{\tt rik@onandoffables.\+com}
+\begin{DoxyItemize}
+\item Initial commit 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{util_8h_a936a30ab66e38c46dbf84ff8a22bcbf7}\label{util_8h_a936a30ab66e38c46dbf84ff8a22bcbf7}} 
+\index{util.\+h@{util.\+h}!high\+Byte@{high\+Byte}}
+\index{high\+Byte@{high\+Byte}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{high\+Byte()}{highByte()}}
+{\footnotesize\ttfamily uint8\+\_\+t high\+Byte (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{wrd }\end{DoxyParamCaption})}
+
+
+
+returns the high byte of a word 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wrd} & The word we need the high byte from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the high byte of the word 
+\end{DoxyReturn}
+\mbox{\Hypertarget{util_8h_aa63d17e0a4788f18c929019202569a4e}\label{util_8h_aa63d17e0a4788f18c929019202569a4e}} 
+\index{util.\+h@{util.\+h}!low\+Byte@{low\+Byte}}
+\index{low\+Byte@{low\+Byte}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{low\+Byte()}{lowByte()}}
+{\footnotesize\ttfamily uint8\+\_\+t low\+Byte (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{wrd }\end{DoxyParamCaption})}
+
+
+
+returns the low byte of a word 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wrd} & The word we need the low byte from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the low byte of the word
+\end{DoxyReturn}
+This file is part of R\+T2D, a 2D Open\+GL framework.
+
+
+\begin{DoxyItemize}
+\item Copyright 2015 Rik Teerling \href{mailto:rik@onandoffables.com}{\tt rik@onandoffables.\+com}
+\begin{DoxyItemize}
+\item Initial commit 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{util_8h_a118876d52f26322c38d8d5495f987651}\label{util_8h_a118876d52f26322c38d8d5495f987651}} 
+\index{util.\+h@{util.\+h}!make\+Word@{make\+Word}}
+\index{make\+Word@{make\+Word}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{make\+Word()}{makeWord()}}
+{\footnotesize\ttfamily uint16\+\_\+t make\+Word (\begin{DoxyParamCaption}\item[{unsigned char}]{high,  }\item[{unsigned char}]{low }\end{DoxyParamCaption})}
+
+
+
+returns a word made of two bytes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em high} & The high byte for the word \\
+\hline
+{\em low} & The low byte for the word \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the word 
+\end{DoxyReturn}
+\mbox{\Hypertarget{util_8h_aada2d75bc8a8c6eb845bd940eadfa3fd}\label{util_8h_aada2d75bc8a8c6eb845bd940eadfa3fd}} 
+\index{util.\+h@{util.\+h}!map@{map}}
+\index{map@{map}!util.\+h@{util.\+h}}
+\subsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily long map (\begin{DoxyParamCaption}\item[{long}]{x,  }\item[{long}]{in\+\_\+min,  }\item[{long}]{in\+\_\+max,  }\item[{long}]{out\+\_\+min,  }\item[{long}]{out\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+maps a value from 1 range to another usage example\+: int val = map(973, 0, 1023, 0, 255); // returns\+: 242 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The value we need to map \\
+\hline
+{\em in\+\_\+min} & The low range of the input value \\
+\hline
+{\em in\+\_\+max} & The upper range of the input value \\
+\hline
+{\em out\+\_\+min} & The low range of the output value \\
+\hline
+{\em out\+\_\+max} & The upper range of the output value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+long the value 
+\end{DoxyReturn}

@@ -1,0 +1,534 @@
+\hypertarget{class_point__t}{}\section{Point\+\_\+t$<$ T $>$ Class Template Reference}
+\label{class_point__t}\index{Point\+\_\+t$<$ T $>$@{Point\+\_\+t$<$ T $>$}}
+
+
+The \hyperlink{class_point__t}{Point\+\_\+t} class is a helper class that makes it easier to define points in space.  
+
+
+
+
+{\ttfamily \#include $<$pointx.\+h$>$}
+
+Inheritance diagram for Point\+\_\+t$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_point__t}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_point__t_a6a0871ca8592da56fae8dd0fde4dcc5d}{Point\+\_\+t} ()
+\begin{DoxyCompactList}\small\item\em This is the Point constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_point__t_a74da469bad09c76462acae8e1b5f1a28}{Point\+\_\+t} (T xx, T yy)
+\begin{DoxyCompactList}\small\item\em This is the 2D Point constructor that creates coordinates instantly. \end{DoxyCompactList}\item 
+\hyperlink{class_point__t_ae825adbedce7f428b150eaa5454469e0}{Point\+\_\+t} (T xx, T yy, T zz)
+\begin{DoxyCompactList}\small\item\em This is the 3D Point constructor that creates coordinates instantly. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_point__t_ae05b28ed42a34a491fd8a2a94500b51f}{$\sim$\+Point\+\_\+t} ()
+\begin{DoxyCompactList}\small\item\em This is the Point destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t_abd0017d51000570cf8c5b071ef37aeb4}{operator+=} (const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em returns the sum of two Points \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t_afac8b7bed8c8b0f6b5bcbbf3ae1362d9}{operator+} (const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&rhs) const
+\begin{DoxyCompactList}\small\item\em returns the sum of two Points \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t_a510c1649a1ff3b46bb602a48de37d7c0}{operator-\/=} (const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em returns the difference between two Points \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t_ab20b4b331780f76392d465f498ca14e1}{operator-\/} (const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&rhs) const
+\begin{DoxyCompactList}\small\item\em returns the difference between two Points \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t_aefb9c2d617458a15d475690641e51b37}{operator$\ast$=} (const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em returns the product of two Points \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t_a56b84bb4471a147a920444370b5bd9bc}{operator$\ast$} (const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&rhs) const
+\begin{DoxyCompactList}\small\item\em returns the product of two Points \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t_a7d548221c6fbe6401682052a5121aa9b}{operator/=} (const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em returns the quotient of two Points \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t_a8ee1a27bc0d6386c7af20006956cab41}{operator/} (const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&rhs) const
+\begin{DoxyCompactList}\small\item\em returns the quotient of two Points \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t_adf6b36a63ecb3250ee9f35f1611e9393}{operator+=} (const T rhs)
+\begin{DoxyCompactList}\small\item\em returns the sum of the Point and any number \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t_a18aa50064d17f83d4880ecafbc1cc115}{operator+} (const T rhs) const
+\begin{DoxyCompactList}\small\item\em returns the sum of the Point and any number \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t_a52e5fc5e911f05b8e88fd918110dd502}{operator-\/=} (const T rhs)
+\begin{DoxyCompactList}\small\item\em returns the difference of the Point and any number \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t_a6c180a0384480acf4929b75557d96748}{operator-\/} (const T rhs) const
+\begin{DoxyCompactList}\small\item\em returns the difference of the Point and any number \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t_a0671ae26709b67542a902f4cbf1e2102}{operator$\ast$=} (const T rhs)
+\begin{DoxyCompactList}\small\item\em returns the product of the Point and any number \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t_a6e2924110e74cc78027171765fb3eb84}{operator$\ast$} (const T rhs) const
+\begin{DoxyCompactList}\small\item\em returns the product of the Point and any number \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t_a9035ca1de1358b7447d1c04a00c0b08e}{operator/=} (const T rhs)
+\begin{DoxyCompactList}\small\item\em returns the quotient of the Point and any number \end{DoxyCompactList}\item 
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t_ac7987146c54aa27b05399048598634c3}{operator/} (const T rhs) const
+\begin{DoxyCompactList}\small\item\em returns the quotient of the Point and any number \end{DoxyCompactList}\item 
+bool \hyperlink{class_point__t_aa9e7b08f004641102956f486c18e79b7}{operator==} (const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Overloads the == operator. \end{DoxyCompactList}\item 
+bool \hyperlink{class_point__t_aa5f770c4e0b7e3fe1e426fdebc4cd0f9}{operator!=} (const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Overloads the != operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{class_point__t_add0b296463fdccbde77953e480ae3d2d}{x}
+\begin{DoxyCompactList}\small\item\em The x value of the Point. \end{DoxyCompactList}\item 
+T \hyperlink{class_point__t_a2c1d504b00b0cf59edd07ad7611bbfde}{y}
+\begin{DoxyCompactList}\small\item\em The y value of the Point. \end{DoxyCompactList}\item 
+T \hyperlink{class_point__t_a7480dcfc81f5cf2eff6434da05b26c18}{z}
+\begin{DoxyCompactList}\small\item\em The z value of the Point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Point\+\_\+t$<$ T $>$}
+
+The \hyperlink{class_point__t}{Point\+\_\+t} class is a helper class that makes it easier to define points in space. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_point__t_a6a0871ca8592da56fae8dd0fde4dcc5d}\label{class_point__t_a6a0871ca8592da56fae8dd0fde4dcc5d}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!Point\+\_\+t@{Point\+\_\+t}}
+\index{Point\+\_\+t@{Point\+\_\+t}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{Point\+\_\+t()}{Point\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::\hyperlink{class_point__t}{Point\+\_\+t} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This is the Point constructor. 
+
+It creates a Point at 0,0,0 \mbox{\Hypertarget{class_point__t_a74da469bad09c76462acae8e1b5f1a28}\label{class_point__t_a74da469bad09c76462acae8e1b5f1a28}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!Point\+\_\+t@{Point\+\_\+t}}
+\index{Point\+\_\+t@{Point\+\_\+t}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{Point\+\_\+t()}{Point\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::\hyperlink{class_point__t}{Point\+\_\+t} (\begin{DoxyParamCaption}\item[{T}]{xx,  }\item[{T}]{yy }\end{DoxyParamCaption})}
+
+
+
+This is the 2D Point constructor that creates coordinates instantly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xx} & The x value of the Point. \\
+\hline
+{\em yy} & The y value of the Point. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_point__t_ae825adbedce7f428b150eaa5454469e0}\label{class_point__t_ae825adbedce7f428b150eaa5454469e0}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!Point\+\_\+t@{Point\+\_\+t}}
+\index{Point\+\_\+t@{Point\+\_\+t}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{Point\+\_\+t()}{Point\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::\hyperlink{class_point__t}{Point\+\_\+t} (\begin{DoxyParamCaption}\item[{T}]{xx,  }\item[{T}]{yy,  }\item[{T}]{zz }\end{DoxyParamCaption})}
+
+
+
+This is the 3D Point constructor that creates coordinates instantly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xx} & The x value of the Point. \\
+\hline
+{\em yy} & The y value of the Point. \\
+\hline
+{\em zz} & The z value of the Point. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_point__t_ae05b28ed42a34a491fd8a2a94500b51f}\label{class_point__t_ae05b28ed42a34a491fd8a2a94500b51f}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!````~Point\+\_\+t@{$\sim$\+Point\+\_\+t}}
+\index{````~Point\+\_\+t@{$\sim$\+Point\+\_\+t}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{$\sim$\+Point\+\_\+t()}{~Point\_t()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::$\sim$\hyperlink{class_point__t}{Point\+\_\+t} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is the Point destructor. 
+
+It cleans up the Point. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_point__t_aa5f770c4e0b7e3fe1e426fdebc4cd0f9}\label{class_point__t_aa5f770c4e0b7e3fe1e426fdebc4cd0f9}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Overloads the != operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The Point to compare with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. true if Points are different 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_a56b84bb4471a147a920444370b5bd9bc}\label{class_point__t_a56b84bb4471a147a920444370b5bd9bc}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+returns the product of two Points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The Point to be multiplied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the product of two Points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_a6e2924110e74cc78027171765fb3eb84}\label{class_point__t_a6e2924110e74cc78027171765fb3eb84}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const T}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+returns the product of the Point and any number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The number to be multiplied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the product of the Point and any number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_aefb9c2d617458a15d475690641e51b37}\label{class_point__t_aefb9c2d617458a15d475690641e51b37}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+returns the product of two Points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The Point to be multiplied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the product of two Points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_a0671ae26709b67542a902f4cbf1e2102}\label{class_point__t_a0671ae26709b67542a902f4cbf1e2102}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const T}]{rhs }\end{DoxyParamCaption})}
+
+
+
+returns the product of the Point and any number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The number to be multiplied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the product of the Point and any number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_afac8b7bed8c8b0f6b5bcbbf3ae1362d9}\label{class_point__t_afac8b7bed8c8b0f6b5bcbbf3ae1362d9}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator+@{operator+}}
+\index{operator+@{operator+}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+returns the sum of two Points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The Point to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sum of two Points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_a18aa50064d17f83d4880ecafbc1cc115}\label{class_point__t_a18aa50064d17f83d4880ecafbc1cc115}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator+@{operator+}}
+\index{operator+@{operator+}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const T}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+returns the sum of the Point and any number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The number to be multiplied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sum of the Point and any number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_abd0017d51000570cf8c5b071ef37aeb4}\label{class_point__t_abd0017d51000570cf8c5b071ef37aeb4}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+returns the sum of two Points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The Point to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sum of two Points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_adf6b36a63ecb3250ee9f35f1611e9393}\label{class_point__t_adf6b36a63ecb3250ee9f35f1611e9393}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const T}]{rhs }\end{DoxyParamCaption})}
+
+
+
+returns the sum of the Point and any number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The number to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sum of the Point and any number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_ab20b4b331780f76392d465f498ca14e1}\label{class_point__t_ab20b4b331780f76392d465f498ca14e1}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+returns the difference between two Points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The Point to be subtracted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the difference between two Points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_a6c180a0384480acf4929b75557d96748}\label{class_point__t_a6c180a0384480acf4929b75557d96748}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{const T}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+returns the difference of the Point and any number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The number to be subtracted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the difference of the Point and any number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_a510c1649a1ff3b46bb602a48de37d7c0}\label{class_point__t_a510c1649a1ff3b46bb602a48de37d7c0}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+returns the difference between two Points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The Point to be subtracted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the difference between two Points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_a52e5fc5e911f05b8e88fd918110dd502}\label{class_point__t_a52e5fc5e911f05b8e88fd918110dd502}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const T}]{rhs }\end{DoxyParamCaption})}
+
+
+
+returns the difference of the Point and any number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The number to be subtracted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the difference between the Point and any number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_a8ee1a27bc0d6386c7af20006956cab41}\label{class_point__t_a8ee1a27bc0d6386c7af20006956cab41}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator/@{operator/}}
+\index{operator/@{operator/}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator/ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+returns the quotient of two Points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The Point to be divided\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the quotient of two Points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_ac7987146c54aa27b05399048598634c3}\label{class_point__t_ac7987146c54aa27b05399048598634c3}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator/@{operator/}}
+\index{operator/@{operator/}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator/ (\begin{DoxyParamCaption}\item[{const T}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+returns the quotient of the Point and any number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The number (divisor)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the quotient of the Point and any number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_a7d548221c6fbe6401682052a5121aa9b}\label{class_point__t_a7d548221c6fbe6401682052a5121aa9b}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator/= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+returns the quotient of two Points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The Point to be divided\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the quotient of two Points 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_a9035ca1de1358b7447d1c04a00c0b08e}\label{class_point__t_a9035ca1de1358b7447d1c04a00c0b08e}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \& \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator/= (\begin{DoxyParamCaption}\item[{const T}]{rhs }\end{DoxyParamCaption})}
+
+
+
+returns the quotient of the Point and any number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The number (divisor)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the quotient of the Point and any number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point__t_aa9e7b08f004641102956f486c18e79b7}\label{class_point__t_aa9e7b08f004641102956f486c18e79b7}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!operator==@{operator==}}
+\index{operator==@{operator==}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Overloads the == operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The Point to compare with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. true if Points are the same 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_point__t_add0b296463fdccbde77953e480ae3d2d}\label{class_point__t_add0b296463fdccbde77953e480ae3d2d}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!x@{x}}
+\index{x@{x}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::x}
+
+
+
+The x value of the Point. 
+
+This is a value on the horizontal axis.
+
+The x value of the Point. \mbox{\Hypertarget{class_point__t_a2c1d504b00b0cf59edd07ad7611bbfde}\label{class_point__t_a2c1d504b00b0cf59edd07ad7611bbfde}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!y@{y}}
+\index{y@{y}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::y}
+
+
+
+The y value of the Point. 
+
+This is a value on the vertical axis.
+
+The y value of the Point. \mbox{\Hypertarget{class_point__t_a7480dcfc81f5cf2eff6434da05b26c18}\label{class_point__t_a7480dcfc81f5cf2eff6434da05b26c18}} 
+\index{Point\+\_\+t@{Point\+\_\+t}!z@{z}}
+\index{z@{z}!Point\+\_\+t@{Point\+\_\+t}}
+\subsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$\+::z}
+
+
+
+The z value of the Point. 
+
+This is a value on the depth axis.
+
+The z value of the Point. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pointx_8h}{pointx.\+h}\end{DoxyCompactItemize}

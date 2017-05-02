@@ -1,0 +1,118 @@
+R\+T2D is a Real\+Time 2D framework, based on somewhat \textquotesingle{}modern\textquotesingle{} Open\+GL (2.\+1+). It compiles and runs on Mac, Linux and Windows.
+
+Compatibility is chosen over features. Readability over efficiency. Simplicity over speed. There\textquotesingle{}s no fancy Open\+GL stuff here. Just update and render scenes with entities that contain (colored) sprites, spritesheets, spritebatches, pixelbuffers, fonts and lines.
+
+\subsection*{Compiling }
+
+Use cmake to create your project files in a separate {\ttfamily build} directory.
+
+\begin{quote}
+You should always be able to delete the {\ttfamily build} directory without losing your work! Whatever you do, work in the {\ttfamily src} directory! That\textquotesingle{}s {\ttfamily demo} and/or {\ttfamily rt2d}. \end{quote}
+
+
+\subsection*{Documentation }
+
+To generate the documentation, run doxygen (with Doxyfile as input) in the root directory of this project\+: \begin{DoxyVerb}doxygen Doxyfile
+\end{DoxyVerb}
+
+
+Then open {\ttfamily documentation.\+html} in the {\ttfamily doc} directory.
+
+\subsection*{Linux }
+
+On Debian-\/based Linux, install the following libraries\+: \begin{DoxyVerb}sudo apt-get install -y git cmake doxygen g++ libgl1-mesa-dev libglu1-mesa-dev libxrandr-dev libxi-dev
+\end{DoxyVerb}
+
+
+Run {\ttfamily bootstrap.\+sh} or\+: \begin{DoxyVerb}mkdir build
+cd build
+cmake -Wno-dev ..
+make
+\end{DoxyVerb}
+
+
+Then you can run the demo\+: \begin{DoxyVerb}./demo
+\end{DoxyVerb}
+
+
+Make sure to add any new files you create to the {\ttfamily C\+Make\+Lists.\+txt} file.
+
+\subsection*{Mac OS X }
+
+Install the following\+:
+
+
+\begin{DoxyItemize}
+\item X\+Code + commandline developer tools
+\item git
+\item cmake
+\item doxygen
+\end{DoxyItemize}
+
+Run {\ttfamily bootstrap.\+sh} or\+: \begin{DoxyVerb}mkdir build
+cd build
+cmake -Wno-dev ..
+make
+\end{DoxyVerb}
+
+
+Then you can run the demo\+: \begin{DoxyVerb}./demo
+\end{DoxyVerb}
+
+
+Make sure to add any new files you create to the {\ttfamily C\+Make\+Lists.\+txt} file.
+
+\subsection*{MS Windows (V\+S2015) }
+
+Install the following\+:
+
+
+\begin{DoxyItemize}
+\item Visual Studio 2015 Community Edition (V\+S2013 also works fine).
+\item git
+\item cmake
+\item doxygen
+\end{DoxyItemize}
+
+In the powershell, run\+: \begin{DoxyVerb}mkdir build
+cd build
+cmake -Wno-dev ..
+\end{DoxyVerb}
+
+
+Then doubleclick the {\ttfamily rt2d.\+sln} file in the {\ttfamily build} directory. Right-\/click the \textquotesingle{}demo\textquotesingle{} directory in Visual Studio and select \textquotesingle{}Set as Start\+Up Project\textquotesingle{}. Then press ctrl-\/\+F5.
+
+Make sure that when you add new files within Visual Studio, you move them to the correct directory in {\ttfamily src} and add them to the {\ttfamily C\+Make\+Lists.\+txt} file.
+
+\subsection*{Libraries }
+
+
+\begin{DoxyItemize}
+\item glfw\+: \href{http://www.glfw.org/}{\tt http\+://www.\+glfw.\+org/}
+\item glew\+: \href{http://glew.sourceforge.net/}{\tt http\+://glew.\+sourceforge.\+net/}
+\item glm\+: \href{http://glm.g-truc.net/}{\tt http\+://glm.\+g-\/truc.\+net/}
+\end{DoxyItemize}
+
+\subsection*{Links }
+
+
+\begin{DoxyItemize}
+\item \href{http://www.opengl-tutorial.org/}{\tt http\+://www.\+opengl-\/tutorial.\+org/}
+\item \href{http://learnopengl.com/}{\tt http\+://learnopengl.\+com/}
+\item \href{http://simonschreibt.de/gat/renderhell/}{\tt http\+://simonschreibt.\+de/gat/renderhell/}
+\item \href{https://github.com/ellisonleao/magictools}{\tt https\+://github.\+com/ellisonleao/magictools}
+\end{DoxyItemize}
+
+The {\ttfamily C\+Make\+Lists.\+txt} file and {\ttfamily rt2d/shader.\+cpp} are based on the ones found here\+: \href{http://www.opengl-tutorial.org/}{\tt http\+://www.\+opengl-\/tutorial.\+org/}.
+
+If you\textquotesingle{}re having trouble compiling this project, follow instructions on \href{http://www.opengl-tutorial.org/}{\tt http\+://www.\+opengl-\/tutorial.\+org/}. Once that compiles, this will probably also compile.
+
+\subsection*{License }
+
+Copyright 2015 Rik Teerling \href{mailto:rik@onandoffables.com}{\tt rik@onandoffables.\+com}
+
+This program is free software; you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-\/1301, U\+SA. 

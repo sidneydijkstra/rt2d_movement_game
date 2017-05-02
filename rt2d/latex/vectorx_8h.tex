@@ -1,0 +1,178 @@
+\hypertarget{vectorx_8h}{}\section{vectorx.\+h File Reference}
+\label{vectorx_8h}\index{vectorx.\+h@{vectorx.\+h}}
+
+
+The \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t} header file.  
+
+
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$rt2d/pointx.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em A helper class to calculate distances and angles. \end{DoxyCompactList}\item 
+class \hyperlink{class_polar__t}{Polar\+\_\+t$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Polar (to Cartesian) coordinates helper class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{vectorx_8h_a6a1e5c0227931d99b703e1fd3adebf52}\label{vectorx_8h_a6a1e5c0227931d99b703e1fd3adebf52}} 
+\#define \hyperlink{vectorx_8h_a6a1e5c0227931d99b703e1fd3adebf52}{PI}~3.\+1415926535897932384626433832795
+\begin{DoxyCompactList}\small\item\em pi (180 deg) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vectorx_8h_ae7728bad6b86aebd3270b35b5faa4847}\label{vectorx_8h_ae7728bad6b86aebd3270b35b5faa4847}} 
+\#define \hyperlink{vectorx_8h_ae7728bad6b86aebd3270b35b5faa4847}{H\+A\+L\+F\+\_\+\+PI}~1.\+5707963267948966192313216916398
+\begin{DoxyCompactList}\small\item\em pi/2 (90 deg) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vectorx_8h_a651f22cd5b94c088af0a4faaa0fc5161}\label{vectorx_8h_a651f22cd5b94c088af0a4faaa0fc5161}} 
+\#define \hyperlink{vectorx_8h_a651f22cd5b94c088af0a4faaa0fc5161}{T\+W\+O\+\_\+\+PI}~6.\+283185307179586476925286766559
+\begin{DoxyCompactList}\small\item\em pi$\ast$2 (360 deg) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vectorx_8h_aab4087f865137a540e6885dda23341cc}\label{vectorx_8h_aab4087f865137a540e6885dda23341cc}} 
+\#define \hyperlink{vectorx_8h_aab4087f865137a540e6885dda23341cc}{D\+E\+G\+\_\+\+T\+O\+\_\+\+R\+AD}~0.\+017453292519943295769236907684886
+\begin{DoxyCompactList}\small\item\em convert degrees to radians \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vectorx_8h_ad04f332238d224f48f547923ee6d3029}\label{vectorx_8h_ad04f332238d224f48f547923ee6d3029}} 
+\#define \hyperlink{vectorx_8h_ad04f332238d224f48f547923ee6d3029}{R\+A\+D\+\_\+\+T\+O\+\_\+\+D\+EG}~57.\+295779513082320876798154814105
+\begin{DoxyCompactList}\small\item\em convert radians to degrees \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ int $>$ \hyperlink{vectorx_8h_af0d32bc238db5cb459371aef7eb44a98}{Vector2i}
+\begin{DoxyCompactList}\small\item\em A typedef for creating Vector\+X\+\_\+t$<$int$>$ \end{DoxyCompactList}\item 
+typedef \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ float $>$ \hyperlink{vectorx_8h_aedb64bbaaf13e20c446bff42270cfde5}{Vector2f}
+\begin{DoxyCompactList}\small\item\em A typedef for creating Vector\+X\+\_\+t$<$float$>$ \end{DoxyCompactList}\item 
+typedef \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ double $>$ \hyperlink{vectorx_8h_a8354be2ec1dba0592215bca5cae0647f}{Vector2d}
+\begin{DoxyCompactList}\small\item\em A typedef for creating Vector\+X\+\_\+t$<$double$>$ \end{DoxyCompactList}\item 
+typedef \hyperlink{vectorx_8h_aedb64bbaaf13e20c446bff42270cfde5}{Vector2f} \hyperlink{vectorx_8h_a599dfa361f200f3bfcf0dbe7aa2cd5ab}{Vector2}
+\begin{DoxyCompactList}\small\item\em A typedef for creating a default Vector2. \end{DoxyCompactList}\item 
+typedef \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ int $>$ \hyperlink{vectorx_8h_aeeddf96ff4e2089f81ba9bffda590b96}{Vector3i}
+\begin{DoxyCompactList}\small\item\em A typedef for creating Vector\+X\+\_\+t$<$int$>$ \end{DoxyCompactList}\item 
+typedef \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ float $>$ \hyperlink{vectorx_8h_a4826374f1a0230cb3352e80db9d22fe4}{Vector3f}
+\begin{DoxyCompactList}\small\item\em A typedef for creating Vector\+X\+\_\+t$<$float$>$ \end{DoxyCompactList}\item 
+typedef \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ double $>$ \hyperlink{vectorx_8h_a350e0c1cd688e9e5eea903ece4b11f07}{Vector3d}
+\begin{DoxyCompactList}\small\item\em A typedef for creating Vector\+X\+\_\+t$<$double$>$ \end{DoxyCompactList}\item 
+typedef \hyperlink{vectorx_8h_a4826374f1a0230cb3352e80db9d22fe4}{Vector3f} \hyperlink{vectorx_8h_a77b3476838590cb29143eb8716ad6399}{Vector3}
+\begin{DoxyCompactList}\small\item\em A typedef for creating a default Vector3. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vectorx_8h_a576daa1ec9c7009927d873bbb9514290}\label{vectorx_8h_a576daa1ec9c7009927d873bbb9514290}} 
+typedef \hyperlink{class_polar__t}{Polar\+\_\+t}$<$ int $>$ \hyperlink{vectorx_8h_a576daa1ec9c7009927d873bbb9514290}{Polari}
+\begin{DoxyCompactList}\small\item\em A typedef for creating a Polar of ints. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vectorx_8h_a002bcc376778d7f74e2b319c75ade493}\label{vectorx_8h_a002bcc376778d7f74e2b319c75ade493}} 
+typedef \hyperlink{class_polar__t}{Polar\+\_\+t}$<$ float $>$ \hyperlink{vectorx_8h_a002bcc376778d7f74e2b319c75ade493}{Polarf}
+\begin{DoxyCompactList}\small\item\em A typedef for creating a Polar of floats. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vectorx_8h_af0d7f7630f01751423e4e270a09630e0}\label{vectorx_8h_af0d7f7630f01751423e4e270a09630e0}} 
+typedef \hyperlink{class_polar__t}{Polar\+\_\+t}$<$ double $>$ \hyperlink{vectorx_8h_af0d7f7630f01751423e4e270a09630e0}{Polard}
+\begin{DoxyCompactList}\small\item\em A typedef for creating a Polar of doubles. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{vectorx_8h_ae6dadb7c8827f4e57f3a883839948fec}\label{vectorx_8h_ae6dadb7c8827f4e57f3a883839948fec}} 
+typedef \hyperlink{vectorx_8h_a002bcc376778d7f74e2b319c75ade493}{Polarf} \hyperlink{vectorx_8h_ae6dadb7c8827f4e57f3a883839948fec}{Polar}
+\begin{DoxyCompactList}\small\item\em A typedef for creating a default Polar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t} header file. 
+
+This file is part of R\+T2D, a 2D Open\+GL framework.
+
+
+\begin{DoxyItemize}
+\item Copyright 2015 Rik Teerling \href{mailto:rik@onandoffables.com}{\tt rik@onandoffables.\+com}
+\begin{DoxyItemize}
+\item Initial commit 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{vectorx_8h_a599dfa361f200f3bfcf0dbe7aa2cd5ab}\label{vectorx_8h_a599dfa361f200f3bfcf0dbe7aa2cd5ab}} 
+\index{vectorx.\+h@{vectorx.\+h}!Vector2@{Vector2}}
+\index{Vector2@{Vector2}!vectorx.\+h@{vectorx.\+h}}
+\subsubsection{\texorpdfstring{Vector2}{Vector2}}
+{\footnotesize\ttfamily \hyperlink{vectorx_8h_a599dfa361f200f3bfcf0dbe7aa2cd5ab}{Vector2}}
+
+
+
+A typedef for creating a default Vector2. 
+
+Create a vector of floats. The default.
+
+A vector of floats (default). \mbox{\Hypertarget{vectorx_8h_a8354be2ec1dba0592215bca5cae0647f}\label{vectorx_8h_a8354be2ec1dba0592215bca5cae0647f}} 
+\index{vectorx.\+h@{vectorx.\+h}!Vector2d@{Vector2d}}
+\index{Vector2d@{Vector2d}!vectorx.\+h@{vectorx.\+h}}
+\subsubsection{\texorpdfstring{Vector2d}{Vector2d}}
+{\footnotesize\ttfamily \hyperlink{vectorx_8h_a8354be2ec1dba0592215bca5cae0647f}{Vector2d}}
+
+
+
+A typedef for creating Vector\+X\+\_\+t$<$double$>$ 
+
+Create a vector of doubles
+
+A vector of doubles \mbox{\Hypertarget{vectorx_8h_aedb64bbaaf13e20c446bff42270cfde5}\label{vectorx_8h_aedb64bbaaf13e20c446bff42270cfde5}} 
+\index{vectorx.\+h@{vectorx.\+h}!Vector2f@{Vector2f}}
+\index{Vector2f@{Vector2f}!vectorx.\+h@{vectorx.\+h}}
+\subsubsection{\texorpdfstring{Vector2f}{Vector2f}}
+{\footnotesize\ttfamily \hyperlink{vectorx_8h_aedb64bbaaf13e20c446bff42270cfde5}{Vector2f}}
+
+
+
+A typedef for creating Vector\+X\+\_\+t$<$float$>$ 
+
+Create a vector of floats
+
+A vector of floats \mbox{\Hypertarget{vectorx_8h_af0d32bc238db5cb459371aef7eb44a98}\label{vectorx_8h_af0d32bc238db5cb459371aef7eb44a98}} 
+\index{vectorx.\+h@{vectorx.\+h}!Vector2i@{Vector2i}}
+\index{Vector2i@{Vector2i}!vectorx.\+h@{vectorx.\+h}}
+\subsubsection{\texorpdfstring{Vector2i}{Vector2i}}
+{\footnotesize\ttfamily \hyperlink{vectorx_8h_af0d32bc238db5cb459371aef7eb44a98}{Vector2i}}
+
+
+
+A typedef for creating Vector\+X\+\_\+t$<$int$>$ 
+
+Create a vector of ints
+
+A vector of ints \mbox{\Hypertarget{vectorx_8h_a77b3476838590cb29143eb8716ad6399}\label{vectorx_8h_a77b3476838590cb29143eb8716ad6399}} 
+\index{vectorx.\+h@{vectorx.\+h}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!vectorx.\+h@{vectorx.\+h}}
+\subsubsection{\texorpdfstring{Vector3}{Vector3}}
+{\footnotesize\ttfamily \hyperlink{vectorx_8h_a77b3476838590cb29143eb8716ad6399}{Vector3}}
+
+
+
+A typedef for creating a default Vector3. 
+
+Create a vector of floats. The default.
+
+A vector of floats (default). \mbox{\Hypertarget{vectorx_8h_a350e0c1cd688e9e5eea903ece4b11f07}\label{vectorx_8h_a350e0c1cd688e9e5eea903ece4b11f07}} 
+\index{vectorx.\+h@{vectorx.\+h}!Vector3d@{Vector3d}}
+\index{Vector3d@{Vector3d}!vectorx.\+h@{vectorx.\+h}}
+\subsubsection{\texorpdfstring{Vector3d}{Vector3d}}
+{\footnotesize\ttfamily \hyperlink{vectorx_8h_a350e0c1cd688e9e5eea903ece4b11f07}{Vector3d}}
+
+
+
+A typedef for creating Vector\+X\+\_\+t$<$double$>$ 
+
+Create a vector of doubles
+
+A vector of doubles \mbox{\Hypertarget{vectorx_8h_a4826374f1a0230cb3352e80db9d22fe4}\label{vectorx_8h_a4826374f1a0230cb3352e80db9d22fe4}} 
+\index{vectorx.\+h@{vectorx.\+h}!Vector3f@{Vector3f}}
+\index{Vector3f@{Vector3f}!vectorx.\+h@{vectorx.\+h}}
+\subsubsection{\texorpdfstring{Vector3f}{Vector3f}}
+{\footnotesize\ttfamily \hyperlink{vectorx_8h_a4826374f1a0230cb3352e80db9d22fe4}{Vector3f}}
+
+
+
+A typedef for creating Vector\+X\+\_\+t$<$float$>$ 
+
+Create a vector of floats
+
+A vector of floats \mbox{\Hypertarget{vectorx_8h_aeeddf96ff4e2089f81ba9bffda590b96}\label{vectorx_8h_aeeddf96ff4e2089f81ba9bffda590b96}} 
+\index{vectorx.\+h@{vectorx.\+h}!Vector3i@{Vector3i}}
+\index{Vector3i@{Vector3i}!vectorx.\+h@{vectorx.\+h}}
+\subsubsection{\texorpdfstring{Vector3i}{Vector3i}}
+{\footnotesize\ttfamily \hyperlink{vectorx_8h_aeeddf96ff4e2089f81ba9bffda590b96}{Vector3i}}
+
+
+
+A typedef for creating Vector\+X\+\_\+t$<$int$>$ 
+
+Create a vector of ints
+
+A vector of ints 

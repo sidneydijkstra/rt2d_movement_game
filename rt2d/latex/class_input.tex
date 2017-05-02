@@ -1,0 +1,332 @@
+\hypertarget{class_input}{}\section{Input Class Reference}
+\label{class_input}\index{Input@{Input}}
+
+
+The \hyperlink{class_input}{Input} class handles Keyboard and Mouse.  
+
+
+
+
+{\ttfamily \#include $<$input.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_input_abae3f379d3f157cf42dc857309832dba}{Input} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{class_input}{Input}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_input_af2db35ba67c8a8ccd23bef6a482fc291}\label{class_input_af2db35ba67c8a8ccd23bef6a482fc291}} 
+virtual \hyperlink{class_input_af2db35ba67c8a8ccd23bef6a482fc291}{$\sim$\+Input} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \hyperlink{class_input}{Input}. \end{DoxyCompactList}\item 
+void \hyperlink{class_input_a6fcfdeb17f2db772a1058274a8fac43e}{update\+Input} (G\+L\+F\+Wwindow $\ast$w)
+\begin{DoxyCompactList}\small\item\em updates the input from Keyboard and Mouse. \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_a62ca94f9d79e246423a8a6e46d6e88dc}{get\+Key} (int key)
+\begin{DoxyCompactList}\small\item\em Is this key pressed? \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_a9759385ef5234448861d0330a205c40b}{get\+Key} (char key)
+\begin{DoxyCompactList}\small\item\em Is this key pressed? \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_a3e7ca67c5c02f7e6516013c987339d05}{get\+Mouse} (int button)
+\begin{DoxyCompactList}\small\item\em Is this mouse button pressed? \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_a96d176060e37d81a0f0c4fef52083b92}{get\+Key\+Down} (int key)
+\begin{DoxyCompactList}\small\item\em Is this key pressed? Only check first press down. \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_a17110267d046bf4ec55f58b2e3f271f2}{get\+Key\+Down} (char key)
+\begin{DoxyCompactList}\small\item\em Is this key pressed? Only check first press down. \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_aac8e9e5714c33bc9d3e478e2472fdc10}{get\+Mouse\+Down} (int button)
+\begin{DoxyCompactList}\small\item\em Is this mouse button pressed? Only check first press down. \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_a965184281347f881d145aac555b727d7}{get\+Key\+Up} (int key)
+\begin{DoxyCompactList}\small\item\em Is this key released? \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_a4e75aadc94c3d0fb2b236388b5dddec7}{get\+Key\+Up} (char key)
+\begin{DoxyCompactList}\small\item\em Is this key released? \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_ad5c2b0983d6319b90ccbe1103f962736}{get\+Mouse\+Up} (int button)
+\begin{DoxyCompactList}\small\item\em Is this mouse button released? \end{DoxyCompactList}\item 
+double \hyperlink{class_input_a998ef567ed9101db034b8274b2543e1b}{get\+MouseX} ()
+\begin{DoxyCompactList}\small\item\em get X position of the Mouse \end{DoxyCompactList}\item 
+double \hyperlink{class_input_afdb964d8fffbbc6bab1d3b34648c1543}{get\+MouseY} ()
+\begin{DoxyCompactList}\small\item\em get Y position of the Mouse \end{DoxyCompactList}\item 
+void \hyperlink{class_input_a2c477753baedd21924670f0a16260160}{set\+Mouse} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Set Mouse cursor to a certain position. \end{DoxyCompactList}\item 
+int \hyperlink{class_input_a8e4f99acfe8cadda2879697be26bf295}{get\+Window\+Width} ()
+\begin{DoxyCompactList}\small\item\em get width of the window \end{DoxyCompactList}\item 
+int \hyperlink{class_input_a3eccc8d5cd466b7ec312e3af7b801473}{get\+Window\+Height} ()
+\begin{DoxyCompactList}\small\item\em get height of the window \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_input}{Input} class handles Keyboard and Mouse. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_input_abae3f379d3f157cf42dc857309832dba}\label{class_input_abae3f379d3f157cf42dc857309832dba}} 
+\index{Input@{Input}!Input@{Input}}
+\index{Input@{Input}!Input@{Input}}
+\subsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily Input\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor of the \hyperlink{class_input}{Input}. 
+
+This file is part of R\+T2D, a 2D Open\+GL framework.
+
+
+\begin{DoxyItemize}
+\item Copyright 2015 Rik Teerling \href{mailto:rik@onandoffables.com}{\tt rik@onandoffables.\+com}
+\begin{DoxyItemize}
+\item Initial commit
+\item \mbox{[}meruiden\mbox{]} scaling of window 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_input_a62ca94f9d79e246423a8a6e46d6e88dc}\label{class_input_a62ca94f9d79e246423a8a6e46d6e88dc}} 
+\index{Input@{Input}!get\+Key@{get\+Key}}
+\index{get\+Key@{get\+Key}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Key()}{getKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Input\+::get\+Key (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is this key pressed? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & as int (see defines) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool key is pressed or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_a9759385ef5234448861d0330a205c40b}\label{class_input_a9759385ef5234448861d0330a205c40b}} 
+\index{Input@{Input}!get\+Key@{get\+Key}}
+\index{get\+Key@{get\+Key}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Key()}{getKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Input\+::get\+Key (\begin{DoxyParamCaption}\item[{char}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is this key pressed? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & as char (ie \textquotesingle{}a\textquotesingle{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool key is pressed or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_a96d176060e37d81a0f0c4fef52083b92}\label{class_input_a96d176060e37d81a0f0c4fef52083b92}} 
+\index{Input@{Input}!get\+Key\+Down@{get\+Key\+Down}}
+\index{get\+Key\+Down@{get\+Key\+Down}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Key\+Down()}{getKeyDown()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Input\+::get\+Key\+Down (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is this key pressed? Only check first press down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & as int (see defines) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool key is pressed first time or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_a17110267d046bf4ec55f58b2e3f271f2}\label{class_input_a17110267d046bf4ec55f58b2e3f271f2}} 
+\index{Input@{Input}!get\+Key\+Down@{get\+Key\+Down}}
+\index{get\+Key\+Down@{get\+Key\+Down}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Key\+Down()}{getKeyDown()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Input\+::get\+Key\+Down (\begin{DoxyParamCaption}\item[{char}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is this key pressed? Only check first press down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & as char (ie \textquotesingle{}a\textquotesingle{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool key is pressed first time or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_a965184281347f881d145aac555b727d7}\label{class_input_a965184281347f881d145aac555b727d7}} 
+\index{Input@{Input}!get\+Key\+Up@{get\+Key\+Up}}
+\index{get\+Key\+Up@{get\+Key\+Up}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Key\+Up()}{getKeyUp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Input\+::get\+Key\+Up (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is this key released? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & as int (see defines) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true or false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_a4e75aadc94c3d0fb2b236388b5dddec7}\label{class_input_a4e75aadc94c3d0fb2b236388b5dddec7}} 
+\index{Input@{Input}!get\+Key\+Up@{get\+Key\+Up}}
+\index{get\+Key\+Up@{get\+Key\+Up}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Key\+Up()}{getKeyUp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Input\+::get\+Key\+Up (\begin{DoxyParamCaption}\item[{char}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is this key released? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & as char (ie \textquotesingle{}a\textquotesingle{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool key is released or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_a3e7ca67c5c02f7e6516013c987339d05}\label{class_input_a3e7ca67c5c02f7e6516013c987339d05}} 
+\index{Input@{Input}!get\+Mouse@{get\+Mouse}}
+\index{get\+Mouse@{get\+Mouse}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Mouse()}{getMouse()}}
+{\footnotesize\ttfamily bool Input\+::get\+Mouse (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is this mouse button pressed? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & num \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool button is pressed or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_aac8e9e5714c33bc9d3e478e2472fdc10}\label{class_input_aac8e9e5714c33bc9d3e478e2472fdc10}} 
+\index{Input@{Input}!get\+Mouse\+Down@{get\+Mouse\+Down}}
+\index{get\+Mouse\+Down@{get\+Mouse\+Down}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Mouse\+Down()}{getMouseDown()}}
+{\footnotesize\ttfamily bool Input\+::get\+Mouse\+Down (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is this mouse button pressed? Only check first press down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & num \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool button is pressed or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_ad5c2b0983d6319b90ccbe1103f962736}\label{class_input_ad5c2b0983d6319b90ccbe1103f962736}} 
+\index{Input@{Input}!get\+Mouse\+Up@{get\+Mouse\+Up}}
+\index{get\+Mouse\+Up@{get\+Mouse\+Up}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Mouse\+Up()}{getMouseUp()}}
+{\footnotesize\ttfamily bool Input\+::get\+Mouse\+Up (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is this mouse button released? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & num \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool button is released or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_a998ef567ed9101db034b8274b2543e1b}\label{class_input_a998ef567ed9101db034b8274b2543e1b}} 
+\index{Input@{Input}!get\+MouseX@{get\+MouseX}}
+\index{get\+MouseX@{get\+MouseX}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Mouse\+X()}{getMouseX()}}
+{\footnotesize\ttfamily double Input\+::get\+MouseX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get X position of the Mouse 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+mouseX as double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_afdb964d8fffbbc6bab1d3b34648c1543}\label{class_input_afdb964d8fffbbc6bab1d3b34648c1543}} 
+\index{Input@{Input}!get\+MouseY@{get\+MouseY}}
+\index{get\+MouseY@{get\+MouseY}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Mouse\+Y()}{getMouseY()}}
+{\footnotesize\ttfamily double Input\+::get\+MouseY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get Y position of the Mouse 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+mouseY as double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_a3eccc8d5cd466b7ec312e3af7b801473}\label{class_input_a3eccc8d5cd466b7ec312e3af7b801473}} 
+\index{Input@{Input}!get\+Window\+Height@{get\+Window\+Height}}
+\index{get\+Window\+Height@{get\+Window\+Height}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Window\+Height()}{getWindowHeight()}}
+{\footnotesize\ttfamily int Input\+::get\+Window\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get height of the window 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+window\+Height as int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_a8e4f99acfe8cadda2879697be26bf295}\label{class_input_a8e4f99acfe8cadda2879697be26bf295}} 
+\index{Input@{Input}!get\+Window\+Width@{get\+Window\+Width}}
+\index{get\+Window\+Width@{get\+Window\+Width}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Window\+Width()}{getWindowWidth()}}
+{\footnotesize\ttfamily int Input\+::get\+Window\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get width of the window 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+window\+Width as int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_a2c477753baedd21924670f0a16260160}\label{class_input_a2c477753baedd21924670f0a16260160}} 
+\index{Input@{Input}!set\+Mouse@{set\+Mouse}}
+\index{set\+Mouse@{set\+Mouse}!Input@{Input}}
+\subsubsection{\texorpdfstring{set\+Mouse()}{setMouse()}}
+{\footnotesize\ttfamily void Input\+::set\+Mouse (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set Mouse cursor to a certain position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & The X position \\
+\hline
+\mbox{\tt in}  & {\em y} & The Y position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_a6fcfdeb17f2db772a1058274a8fac43e}\label{class_input_a6fcfdeb17f2db772a1058274a8fac43e}} 
+\index{Input@{Input}!update\+Input@{update\+Input}}
+\index{update\+Input@{update\+Input}!Input@{Input}}
+\subsubsection{\texorpdfstring{update\+Input()}{updateInput()}}
+{\footnotesize\ttfamily void Input\+::update\+Input (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{w }\end{DoxyParamCaption})}
+
+
+
+updates the input from Keyboard and Mouse. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em w} & G\+L\+F\+Wwindow$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{input_8h}{input.\+h}\item 
+input.\+cpp\end{DoxyCompactItemize}

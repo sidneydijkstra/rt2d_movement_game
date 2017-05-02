@@ -1,0 +1,548 @@
+\hypertarget{class_vector_x__t}{}\section{Vector\+X\+\_\+t$<$ T $>$ Class Template Reference}
+\label{class_vector_x__t}\index{Vector\+X\+\_\+t$<$ T $>$@{Vector\+X\+\_\+t$<$ T $>$}}
+
+
+A helper class to calculate distances and angles.  
+
+
+
+
+{\ttfamily \#include $<$vectorx.\+h$>$}
+
+Inheritance diagram for Vector\+X\+\_\+t$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_vector_x__t}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vector_x__t_a0afaded32c122f68359ed9aa789978f2}{Vector\+X\+\_\+t} ()
+\begin{DoxyCompactList}\small\item\em Default Vector\+\_\+t$<$\+T$>$ constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_vector_x__t_a3e9c4344b74f4a74924188c9d7ee6b16}{Vector\+X\+\_\+t} (T xx, T yy)
+\begin{DoxyCompactList}\small\item\em Creates a Vector2 with endpoint xx,yy. \end{DoxyCompactList}\item 
+\hyperlink{class_vector_x__t_a11ee21d75512d8ecf7cbb21b97e4b47e}{Vector\+X\+\_\+t} (T xx, T yy, T zz)
+\begin{DoxyCompactList}\small\item\em Creates a Vector3 with endpoint xx,yy,zz. \end{DoxyCompactList}\item 
+\hyperlink{class_vector_x__t_a25ef303a780ddfd52572d95c232d2a5b}{Vector\+X\+\_\+t} (\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ p)
+\begin{DoxyCompactList}\small\item\em Creates a Vector\+\_\+t$<$\+T$>$ with endpoint Point\+\_\+t$<$\+T$>$ p. \end{DoxyCompactList}\item 
+\hyperlink{class_vector_x__t_a8ac4f12ebd7673a4b3b7cf86e842c912}{Vector\+X\+\_\+t} (\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ begin, \hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$ end)
+\begin{DoxyCompactList}\small\item\em Creates a Vector\+\_\+t$<$\+T$>$ with startingpoint begin and endpoint end. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_vector_x__t_a91e541bc8a28a206c0caaefee09c4fdc}{$\sim$\+Vector\+X\+\_\+t} ()
+\begin{DoxyCompactList}\small\item\em This is the Vector\+\_\+t$<$\+T$>$ destructor. \end{DoxyCompactList}\item 
+const T \hyperlink{class_vector_x__t_aa1548451f4620694a671d9b15be69ba2}{get\+Length} () const
+\begin{DoxyCompactList}\small\item\em Get the length of the Vector\+\_\+t$<$\+T$>$ \end{DoxyCompactList}\item 
+const T \hyperlink{class_vector_x__t_a2b6ed2553246864a1f903619de4e0786}{get\+Length\+Squared} () const
+\begin{DoxyCompactList}\small\item\em Get the squared length of the Vector\+\_\+t$<$\+T$>$ \end{DoxyCompactList}\item 
+const T \hyperlink{class_vector_x__t_a7e497c0abad76724767e78644ff91e35}{get\+Angle} () const
+\begin{DoxyCompactList}\small\item\em Get the angle of the Vector2 in radians on the X-\/axis. \end{DoxyCompactList}\item 
+const T \hyperlink{class_vector_x__t_abdee14870829077f912a2e5b85ceb51a}{get\+Angle\+Deg} () const
+\begin{DoxyCompactList}\small\item\em Get the angle of the Vector2 in degrees on the X-\/axis. \end{DoxyCompactList}\item 
+const T \hyperlink{class_vector_x__t_a875b1e98058eafffead7e4a0e39496f9}{get\+Angle} (const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Get the angle between this Vector\+\_\+t$<$\+T$>$, and another Vector\+\_\+t$<$\+T$>$ in radians. \end{DoxyCompactList}\item 
+const T \hyperlink{class_vector_x__t_a936a9063f46982c8837b88c6a16526bf}{get\+Angle\+Deg} (const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Get the angle between this Vector\+\_\+t$<$\+T$>$, and another Vector\+\_\+t$<$\+T$>$ in degrees. \end{DoxyCompactList}\item 
+const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \hyperlink{class_vector_x__t_af977e73b4611bededc322a113ad2b523}{get\+Normalized} () const
+\begin{DoxyCompactList}\small\item\em Get the normalized Vector\+\_\+t$<$\+T$>$. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vector_x__t_a11fc8d9232f89ad0b572fcaff6895814}\label{class_vector_x__t_a11fc8d9232f89ad0b572fcaff6895814}} 
+void \hyperlink{class_vector_x__t_a11fc8d9232f89ad0b572fcaff6895814}{normalize} ()
+\begin{DoxyCompactList}\small\item\em normalize this Vector\+\_\+t$<$\+T$>$ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vector_x__t_abf57f54eabe52a159804689ccd80b9c4}\label{class_vector_x__t_abf57f54eabe52a159804689ccd80b9c4}} 
+void \hyperlink{class_vector_x__t_abf57f54eabe52a159804689ccd80b9c4}{lerp} (T frac)
+\begin{DoxyCompactList}\small\item\em Get a lerped Vector\+\_\+t$<$\+T$>$ according to some fraction (between 0 and 1) \end{DoxyCompactList}\item 
+const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \hyperlink{class_vector_x__t_a2b5339021a3287a60081537d0e0a75d7}{get\+Lerped} (T frac) const
+\begin{DoxyCompactList}\small\item\em Get a copy of a lerped Vector\+\_\+t$<$\+T$>$ according to some fraction (between 0 and 1) \end{DoxyCompactList}\item 
+const T \hyperlink{class_vector_x__t_a47edb26aa302ab3611ec850f56b1a0f0}{dot} (const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Get the dot product of this and another Vector\+\_\+t$<$\+T$>$. \end{DoxyCompactList}\item 
+const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \hyperlink{class_vector_x__t_a8384a54196c5416ccca9312a87f23321}{cross} (const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \&other) const
+\begin{DoxyCompactList}\small\item\em Get the cross product of this and another Vector3. This only makes sense with a Vector3. \end{DoxyCompactList}\item 
+void \hyperlink{class_vector_x__t_ad4e572fc98fe4d786b907598b2c8eb77}{rotate} (T angle)
+\begin{DoxyCompactList}\small\item\em Rotate this Vector2 in radians. \end{DoxyCompactList}\item 
+void \hyperlink{class_vector_x__t_a3ff22c065f96081f36844f175822117b}{rotation} (T angle)
+\begin{DoxyCompactList}\small\item\em set the Rotation of this Vector2 in radians. \end{DoxyCompactList}\item 
+void \hyperlink{class_vector_x__t_a06dd763262cfd0779011a0a292ba2143}{rotate\+Deg} (T angle)
+\begin{DoxyCompactList}\small\item\em Rotate this Vector2 in degrees. \end{DoxyCompactList}\item 
+void \hyperlink{class_vector_x__t_a9f02a5c0c808aa2270e443031ba1e9e0}{rotation\+Deg} (T angle)
+\begin{DoxyCompactList}\small\item\em set the Rotation of this Vector2 in degrees. \end{DoxyCompactList}\item 
+const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \hyperlink{class_vector_x__t_a73fc65bea5601dc510b720305fab02b5}{get\+Rotated} (T angle) const
+\begin{DoxyCompactList}\small\item\em Get a rotated copy of this Vector2 in radians. \end{DoxyCompactList}\item 
+const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \hyperlink{class_vector_x__t_ae1d1ebad5cbaa4430f9a6e230b98c99e}{get\+Rotated\+Deg} (T angle) const
+\begin{DoxyCompactList}\small\item\em Get a Rotated copy of this Vector2 in degrees. \end{DoxyCompactList}\item 
+void \hyperlink{class_vector_x__t_a2a4914eef4789c14c1c78b235b298565}{limit} (T amount)
+\begin{DoxyCompactList}\small\item\em Limit the length of this Vector2 to the amount. \end{DoxyCompactList}\item 
+const bool \hyperlink{class_vector_x__t_a4e568334b218fda51d03636310f23ab4}{operator$<$} (\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ other) const
+\begin{DoxyCompactList}\small\item\em Overloads the $<$ operator. \end{DoxyCompactList}\item 
+const bool \hyperlink{class_vector_x__t_a311676a873e6851386a71d5b781d77fc}{operator$>$} (\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ other) const
+\begin{DoxyCompactList}\small\item\em Overloads the $>$ operator. \end{DoxyCompactList}\item 
+const bool \hyperlink{class_vector_x__t_a4aa8b297bdb6c3e51c004520bff95f73}{operator$<$=} (\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ other) const
+\begin{DoxyCompactList}\small\item\em Overloads the $<$= operator. \end{DoxyCompactList}\item 
+const bool \hyperlink{class_vector_x__t_a5e7b917f91229508634bc8ab57a3b02c}{operator$>$=} (\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ other) const
+\begin{DoxyCompactList}\small\item\em Overloads the $>$= operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Vector\+X\+\_\+t$<$ T $>$}
+
+A helper class to calculate distances and angles. 
+
+Extends Point. A Vector\+\_\+t$<$\+T$>$ contains the end position, but also direction. The origin is always 0,0,0
+
+You will probably use this mostly as a Vector2. It is in fact a Vector3, but it should be transparent enough not to notice. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_vector_x__t_a0afaded32c122f68359ed9aa789978f2}\label{class_vector_x__t_a0afaded32c122f68359ed9aa789978f2}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{Vector\+X\+\_\+t()}{VectorX\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Vector\+\_\+t$<$\+T$>$ constructor. 
+
+Creates a Vector\+\_\+t$<$\+T$>$ with endpoint 0,0,0 Length = 0 \mbox{\Hypertarget{class_vector_x__t_a3e9c4344b74f4a74924188c9d7ee6b16}\label{class_vector_x__t_a3e9c4344b74f4a74924188c9d7ee6b16}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{Vector\+X\+\_\+t()}{VectorX\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t} (\begin{DoxyParamCaption}\item[{T}]{xx,  }\item[{T}]{yy }\end{DoxyParamCaption})}
+
+
+
+Creates a Vector2 with endpoint xx,yy. 
+
+This is an overloaded Vector2 constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em xx} & The x position of the Vector2. \\
+\hline
+{\em yy} & The y position of the Vector2. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vector_x__t_a11ee21d75512d8ecf7cbb21b97e4b47e}\label{class_vector_x__t_a11ee21d75512d8ecf7cbb21b97e4b47e}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{Vector\+X\+\_\+t()}{VectorX\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t} (\begin{DoxyParamCaption}\item[{T}]{xx,  }\item[{T}]{yy,  }\item[{T}]{zz }\end{DoxyParamCaption})}
+
+
+
+Creates a Vector3 with endpoint xx,yy,zz. 
+
+This is an overloaded Vector3 constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em xx} & The x position of the Vector3. \\
+\hline
+{\em yy} & The y position of the Vector3. \\
+\hline
+{\em zz} & The z position of the Vector3. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vector_x__t_a25ef303a780ddfd52572d95c232d2a5b}\label{class_vector_x__t_a25ef303a780ddfd52572d95c232d2a5b}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{Vector\+X\+\_\+t()}{VectorX\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t} (\begin{DoxyParamCaption}\item[{\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$}]{p }\end{DoxyParamCaption})}
+
+
+
+Creates a Vector\+\_\+t$<$\+T$>$ with endpoint Point\+\_\+t$<$\+T$>$ p. 
+
+This is an overloaded Vector\+\_\+t$<$\+T$>$ constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The position of the Vector\+\_\+t$<$\+T$>$ as a Point. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vector_x__t_a8ac4f12ebd7673a4b3b7cf86e842c912}\label{class_vector_x__t_a8ac4f12ebd7673a4b3b7cf86e842c912}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{Vector\+X\+\_\+t()}{VectorX\_t()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t} (\begin{DoxyParamCaption}\item[{\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$}]{begin,  }\item[{\hyperlink{class_point__t}{Point\+\_\+t}$<$ T $>$}]{end }\end{DoxyParamCaption})}
+
+
+
+Creates a Vector\+\_\+t$<$\+T$>$ with startingpoint begin and endpoint end. 
+
+This is an overloaded Vector\+\_\+t$<$\+T$>$ constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em begin} & The origin of the Vector\+\_\+t$<$\+T$>$ \\
+\hline
+{\em end} & The endpoint of the Vector\+\_\+t$<$\+T$>$. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vector_x__t_a91e541bc8a28a206c0caaefee09c4fdc}\label{class_vector_x__t_a91e541bc8a28a206c0caaefee09c4fdc}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!````~Vector\+X\+\_\+t@{$\sim$\+Vector\+X\+\_\+t}}
+\index{````~Vector\+X\+\_\+t@{$\sim$\+Vector\+X\+\_\+t}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{$\sim$\+Vector\+X\+\_\+t()}{~VectorX\_t()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::$\sim$\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is the Vector\+\_\+t$<$\+T$>$ destructor. 
+
+Clean up the Vector\+\_\+t$<$\+T$>$. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vector_x__t_a8384a54196c5416ccca9312a87f23321}\label{class_vector_x__t_a8384a54196c5416ccca9312a87f23321}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!cross@{cross}}
+\index{cross@{cross}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{cross()}{cross()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::cross (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Get the cross product of this and another Vector3. This only makes sense with a Vector3. 
+
+\begin{DoxyReturn}{Returns}
+Vector\+\_\+t$<$\+T$>$ the cross product 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_a47edb26aa302ab3611ec850f56b1a0f0}\label{class_vector_x__t_a47edb26aa302ab3611ec850f56b1a0f0}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!dot@{dot}}
+\index{dot@{dot}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{dot()}{dot()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::dot (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Get the dot product of this and another Vector\+\_\+t$<$\+T$>$. 
+
+\begin{DoxyReturn}{Returns}
+Scalar Returns the dot product 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_a7e497c0abad76724767e78644ff91e35}\label{class_vector_x__t_a7e497c0abad76724767e78644ff91e35}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!get\+Angle@{get\+Angle}}
+\index{get\+Angle@{get\+Angle}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+Angle()}{getAngle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the angle of the Vector2 in radians on the X-\/axis. 
+
+\begin{DoxyReturn}{Returns}
+angle The angle of the Vector2 in radians 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_a875b1e98058eafffead7e4a0e39496f9}\label{class_vector_x__t_a875b1e98058eafffead7e4a0e39496f9}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!get\+Angle@{get\+Angle}}
+\index{get\+Angle@{get\+Angle}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+Angle()}{getAngle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::get\+Angle (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Get the angle between this Vector\+\_\+t$<$\+T$>$, and another Vector\+\_\+t$<$\+T$>$ in radians. 
+
+\begin{DoxyReturn}{Returns}
+angle The angle between this Vector\+\_\+t$<$\+T$>$, and another Vector\+\_\+t$<$\+T$>$ in radians 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_abdee14870829077f912a2e5b85ceb51a}\label{class_vector_x__t_abdee14870829077f912a2e5b85ceb51a}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!get\+Angle\+Deg@{get\+Angle\+Deg}}
+\index{get\+Angle\+Deg@{get\+Angle\+Deg}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+Angle\+Deg()}{getAngleDeg()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::get\+Angle\+Deg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the angle of the Vector2 in degrees on the X-\/axis. 
+
+\begin{DoxyReturn}{Returns}
+angle The angle of the Vector2 in degrees 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_a936a9063f46982c8837b88c6a16526bf}\label{class_vector_x__t_a936a9063f46982c8837b88c6a16526bf}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!get\+Angle\+Deg@{get\+Angle\+Deg}}
+\index{get\+Angle\+Deg@{get\+Angle\+Deg}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+Angle\+Deg()}{getAngleDeg()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::get\+Angle\+Deg (\begin{DoxyParamCaption}\item[{const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Get the angle between this Vector\+\_\+t$<$\+T$>$, and another Vector\+\_\+t$<$\+T$>$ in degrees. 
+
+\begin{DoxyReturn}{Returns}
+angle The angle between this Vector\+\_\+t$<$\+T$>$, and another Vector\+\_\+t$<$\+T$>$ in degrees 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_aa1548451f4620694a671d9b15be69ba2}\label{class_vector_x__t_aa1548451f4620694a671d9b15be69ba2}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!get\+Length@{get\+Length}}
+\index{get\+Length@{get\+Length}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+Length()}{getLength()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the length of the Vector\+\_\+t$<$\+T$>$ 
+
+Returns the length of the Vector\+\_\+t$<$\+T$>$ (pythagoras)
+
+\begin{DoxyReturn}{Returns}
+T The length of the Vector\+\_\+t$<$\+T$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_a2b6ed2553246864a1f903619de4e0786}\label{class_vector_x__t_a2b6ed2553246864a1f903619de4e0786}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!get\+Length\+Squared@{get\+Length\+Squared}}
+\index{get\+Length\+Squared@{get\+Length\+Squared}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+Length\+Squared()}{getLengthSquared()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::get\+Length\+Squared (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the squared length of the Vector\+\_\+t$<$\+T$>$ 
+
+Returns the squared length of the Vector\+\_\+t$<$\+T$>$
+
+\begin{DoxyReturn}{Returns}
+T The squared length of the Vector\+\_\+t$<$\+T$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_a2b5339021a3287a60081537d0e0a75d7}\label{class_vector_x__t_a2b5339021a3287a60081537d0e0a75d7}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!get\+Lerped@{get\+Lerped}}
+\index{get\+Lerped@{get\+Lerped}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+Lerped()}{getLerped()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::get\+Lerped (\begin{DoxyParamCaption}\item[{T}]{frac }\end{DoxyParamCaption}) const}
+
+
+
+Get a copy of a lerped Vector\+\_\+t$<$\+T$>$ according to some fraction (between 0 and 1) 
+
+\begin{DoxyReturn}{Returns}
+Vector\+\_\+t$<$\+T$>$ Returns a lerped Vector\+\_\+t$<$\+T$>$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_af977e73b4611bededc322a113ad2b523}\label{class_vector_x__t_af977e73b4611bededc322a113ad2b523}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!get\+Normalized@{get\+Normalized}}
+\index{get\+Normalized@{get\+Normalized}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+Normalized()}{getNormalized()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::get\+Normalized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the normalized Vector\+\_\+t$<$\+T$>$. 
+
+\begin{DoxyReturn}{Returns}
+Vector\+\_\+t$<$\+T$>$ Returns a Vector\+\_\+t$<$\+T$>$ with length 1. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_a73fc65bea5601dc510b720305fab02b5}\label{class_vector_x__t_a73fc65bea5601dc510b720305fab02b5}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!get\+Rotated@{get\+Rotated}}
+\index{get\+Rotated@{get\+Rotated}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+Rotated()}{getRotated()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::get\+Rotated (\begin{DoxyParamCaption}\item[{T}]{angle }\end{DoxyParamCaption}) const}
+
+
+
+Get a rotated copy of this Vector2 in radians. 
+
+This only makes sense with a Vector2
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & the angle to rotate on the Z-\/axis \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vector_x__t_ae1d1ebad5cbaa4430f9a6e230b98c99e}\label{class_vector_x__t_ae1d1ebad5cbaa4430f9a6e230b98c99e}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!get\+Rotated\+Deg@{get\+Rotated\+Deg}}
+\index{get\+Rotated\+Deg@{get\+Rotated\+Deg}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{get\+Rotated\+Deg()}{getRotatedDeg()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$ \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::get\+Rotated\+Deg (\begin{DoxyParamCaption}\item[{T}]{angle }\end{DoxyParamCaption}) const}
+
+
+
+Get a Rotated copy of this Vector2 in degrees. 
+
+This only makes sense with a Vector2
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & the angle to rotate on the Z-\/axis \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vector_x__t_a2a4914eef4789c14c1c78b235b298565}\label{class_vector_x__t_a2a4914eef4789c14c1c78b235b298565}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!limit@{limit}}
+\index{limit@{limit}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{limit()}{limit()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::limit (\begin{DoxyParamCaption}\item[{T}]{amount }\end{DoxyParamCaption})}
+
+
+
+Limit the length of this Vector2 to the amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & the amount to limit to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vector_x__t_a4e568334b218fda51d03636310f23ab4}\label{class_vector_x__t_a4e568334b218fda51d03636310f23ab4}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const bool \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Overloads the $<$ operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The Vector\+X\+\_\+t$<$\+T$>$ to compare with (compares the length of the Vector\+X\+\_\+t$<$\+T$>$)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. true if this \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t} is shorter than other 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_a4aa8b297bdb6c3e51c004520bff95f73}\label{class_vector_x__t_a4aa8b297bdb6c3e51c004520bff95f73}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const bool \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::operator$<$= (\begin{DoxyParamCaption}\item[{\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Overloads the $<$= operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The Vector\+X\+\_\+t$<$\+T$>$ to compare with (compares the length of the Vector\+X\+\_\+t$<$\+T$>$)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. true if this \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t} is shorter or equal to other. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_a311676a873e6851386a71d5b781d77fc}\label{class_vector_x__t_a311676a873e6851386a71d5b781d77fc}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const bool \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::operator$>$ (\begin{DoxyParamCaption}\item[{\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Overloads the $>$ operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The Vector\+X\+\_\+t$<$\+T$>$ to compare with (compares the length of the Vector\+X\+\_\+t$<$\+T$>$)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. true if this \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t} is longer than other 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_a5e7b917f91229508634bc8ab57a3b02c}\label{class_vector_x__t_a5e7b917f91229508634bc8ab57a3b02c}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const bool \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::operator$>$= (\begin{DoxyParamCaption}\item[{\hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Overloads the $>$= operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The Vector\+X\+\_\+t$<$\+T$>$ to compare with (compares the length of the Vector\+X\+\_\+t$<$\+T$>$)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. true if this \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t} is longer or equal to other. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector_x__t_ad4e572fc98fe4d786b907598b2c8eb77}\label{class_vector_x__t_ad4e572fc98fe4d786b907598b2c8eb77}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!rotate@{rotate}}
+\index{rotate@{rotate}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::rotate (\begin{DoxyParamCaption}\item[{T}]{angle }\end{DoxyParamCaption})}
+
+
+
+Rotate this Vector2 in radians. 
+
+This only makes sense with a Vector2
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & the angle to rotate on the Z-\/axis \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vector_x__t_a06dd763262cfd0779011a0a292ba2143}\label{class_vector_x__t_a06dd763262cfd0779011a0a292ba2143}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!rotate\+Deg@{rotate\+Deg}}
+\index{rotate\+Deg@{rotate\+Deg}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{rotate\+Deg()}{rotateDeg()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::rotate\+Deg (\begin{DoxyParamCaption}\item[{T}]{angle }\end{DoxyParamCaption})}
+
+
+
+Rotate this Vector2 in degrees. 
+
+This only makes sense with a Vector2
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & the angle to rotate on the Z-\/axis \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vector_x__t_a3ff22c065f96081f36844f175822117b}\label{class_vector_x__t_a3ff22c065f96081f36844f175822117b}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!rotation@{rotation}}
+\index{rotation@{rotation}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::rotation (\begin{DoxyParamCaption}\item[{T}]{angle }\end{DoxyParamCaption})}
+
+
+
+set the Rotation of this Vector2 in radians. 
+
+This only makes sense with a Vector2
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & the angle of rotation on the Z-\/axis \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vector_x__t_a9f02a5c0c808aa2270e443031ba1e9e0}\label{class_vector_x__t_a9f02a5c0c808aa2270e443031ba1e9e0}} 
+\index{Vector\+X\+\_\+t@{Vector\+X\+\_\+t}!rotation\+Deg@{rotation\+Deg}}
+\index{rotation\+Deg@{rotation\+Deg}!Vector\+X\+\_\+t@{Vector\+X\+\_\+t}}
+\subsubsection{\texorpdfstring{rotation\+Deg()}{rotationDeg()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{class_vector_x__t}{Vector\+X\+\_\+t}$<$ T $>$\+::rotation\+Deg (\begin{DoxyParamCaption}\item[{T}]{angle }\end{DoxyParamCaption})}
+
+
+
+set the Rotation of this Vector2 in degrees. 
+
+This only makes sense with a Vector2
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & the angle of rotation on the Z-\/axis \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vectorx_8h}{vectorx.\+h}\end{DoxyCompactItemize}

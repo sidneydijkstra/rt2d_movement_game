@@ -1,0 +1,167 @@
+\hypertarget{class_resource_manager}{}\section{Resource\+Manager Class Reference}
+\label{class_resource_manager}\index{Resource\+Manager@{Resource\+Manager}}
+
+
+The \hyperlink{class_resource_manager}{Resource\+Manager} class makes sure resources are loaded from disk only once.  
+
+
+
+
+{\ttfamily \#include $<$resourcemanager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_resource_manager_a3b32babd2e81909bbd90d7f2d566fadb}{Resource\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{class_resource_manager}{Resource\+Manager}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_resource_manager_a671c186e4630599e7e36d000c53eaf80}\label{class_resource_manager_a671c186e4630599e7e36d000c53eaf80}} 
+virtual \hyperlink{class_resource_manager_a671c186e4630599e7e36d000c53eaf80}{$\sim$\+Resource\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \hyperlink{class_resource_manager}{Resource\+Manager}. \end{DoxyCompactList}\item 
+\hyperlink{class_texture}{Texture} $\ast$ \hyperlink{class_resource_manager_a66f5436b2a1b78459f543e45ba5013eb}{get\+Texture} (const std\+::string \&filename, int filter, int wrap)
+\begin{DoxyCompactList}\small\item\em get a \hyperlink{class_texture}{Texture} (from disk if need be) \end{DoxyCompactList}\item 
+\hyperlink{class_mesh}{Mesh} $\ast$ \hyperlink{class_resource_manager_a83af97058447e2119fc870a405421e32}{get\+Sprite\+Mesh} (int width, int height, float pivotx, float pivoty, float uvwidth, float uvheight, int circle, int which)
+\begin{DoxyCompactList}\small\item\em Generate a \hyperlink{class_sprite}{Sprite} \hyperlink{class_mesh}{Mesh}. \end{DoxyCompactList}\item 
+\hyperlink{class_mesh}{Mesh} $\ast$ \hyperlink{class_resource_manager_ac6b7bc445bf9193e5791d80d74b07591}{get\+Line\+Mesh} (\hyperlink{class_line}{Line} $\ast$line)
+\begin{DoxyCompactList}\small\item\em Generate a \hyperlink{class_line}{Line} \hyperlink{class_mesh}{Mesh}. \end{DoxyCompactList}\item 
+\hyperlink{class_shader}{Shader} $\ast$ \hyperlink{class_resource_manager_ad4fba1143552a85ea52f864a1e445c25}{get\+Shader} (const std\+::string \&vs, const std\+::string \&fs)
+\begin{DoxyCompactList}\small\item\em Get a \hyperlink{class_shader}{Shader} (from disk if need be) \end{DoxyCompactList}\item 
+void \hyperlink{class_resource_manager_a027b7aa8171349b251ec46e4cc8ead56}{cleanup} ()
+\begin{DoxyCompactList}\small\item\em clean up resources \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_resource_manager}{Resource\+Manager} class makes sure resources are loaded from disk only once. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_resource_manager_a3b32babd2e81909bbd90d7f2d566fadb}\label{class_resource_manager_a3b32babd2e81909bbd90d7f2d566fadb}} 
+\index{Resource\+Manager@{Resource\+Manager}!Resource\+Manager@{Resource\+Manager}}
+\index{Resource\+Manager@{Resource\+Manager}!Resource\+Manager@{Resource\+Manager}}
+\subsubsection{\texorpdfstring{Resource\+Manager()}{ResourceManager()}}
+{\footnotesize\ttfamily Resource\+Manager\+::\+Resource\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor of the \hyperlink{class_resource_manager}{Resource\+Manager}. 
+
+This file is part of R\+T2D, a 2D Open\+GL framework.
+
+
+\begin{DoxyItemize}
+\item Copyright 2015 Rik Teerling \href{mailto:rik@onandoffables.com}{\tt rik@onandoffables.\+com}
+\begin{DoxyItemize}
+\item Initial commit 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_manager_a027b7aa8171349b251ec46e4cc8ead56}\label{class_resource_manager_a027b7aa8171349b251ec46e4cc8ead56}} 
+\index{Resource\+Manager@{Resource\+Manager}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!Resource\+Manager@{Resource\+Manager}}
+\subsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+clean up resources 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_ac6b7bc445bf9193e5791d80d74b07591}\label{class_resource_manager_ac6b7bc445bf9193e5791d80d74b07591}} 
+\index{Resource\+Manager@{Resource\+Manager}!get\+Line\+Mesh@{get\+Line\+Mesh}}
+\index{get\+Line\+Mesh@{get\+Line\+Mesh}!Resource\+Manager@{Resource\+Manager}}
+\subsubsection{\texorpdfstring{get\+Line\+Mesh()}{getLineMesh()}}
+{\footnotesize\ttfamily \hyperlink{class_mesh}{Mesh} $\ast$ Resource\+Manager\+::get\+Line\+Mesh (\begin{DoxyParamCaption}\item[{\hyperlink{class_line}{Line} $\ast$}]{line }\end{DoxyParamCaption})}
+
+
+
+Generate a \hyperlink{class_line}{Line} \hyperlink{class_mesh}{Mesh}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & pointer to a \hyperlink{class_line}{Line} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mesh$\ast$ a pointer to the generated \hyperlink{class_mesh}{Mesh} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_ad4fba1143552a85ea52f864a1e445c25}\label{class_resource_manager_ad4fba1143552a85ea52f864a1e445c25}} 
+\index{Resource\+Manager@{Resource\+Manager}!get\+Shader@{get\+Shader}}
+\index{get\+Shader@{get\+Shader}!Resource\+Manager@{Resource\+Manager}}
+\subsubsection{\texorpdfstring{get\+Shader()}{getShader()}}
+{\footnotesize\ttfamily \hyperlink{class_shader}{Shader} $\ast$ Resource\+Manager\+::get\+Shader (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{vs,  }\item[{const std\+::string \&}]{fs }\end{DoxyParamCaption})}
+
+
+
+Get a \hyperlink{class_shader}{Shader} (from disk if need be) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vs} & the vertex \hyperlink{class_shader}{Shader} \\
+\hline
+{\em fs} & the fragment \hyperlink{class_shader}{Shader} (\textquotesingle{}pixelshader\textquotesingle{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Shader$\ast$ a pointer to a \hyperlink{class_shader}{Shader} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_a83af97058447e2119fc870a405421e32}\label{class_resource_manager_a83af97058447e2119fc870a405421e32}} 
+\index{Resource\+Manager@{Resource\+Manager}!get\+Sprite\+Mesh@{get\+Sprite\+Mesh}}
+\index{get\+Sprite\+Mesh@{get\+Sprite\+Mesh}!Resource\+Manager@{Resource\+Manager}}
+\subsubsection{\texorpdfstring{get\+Sprite\+Mesh()}{getSpriteMesh()}}
+{\footnotesize\ttfamily \hyperlink{class_mesh}{Mesh} $\ast$ Resource\+Manager\+::get\+Sprite\+Mesh (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{float}]{pivotx,  }\item[{float}]{pivoty,  }\item[{float}]{uvwidth,  }\item[{float}]{uvheight,  }\item[{int}]{circle,  }\item[{int}]{which }\end{DoxyParamCaption})}
+
+
+
+Generate a \hyperlink{class_sprite}{Sprite} \hyperlink{class_mesh}{Mesh}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the width of the \hyperlink{class_sprite}{Sprite} \\
+\hline
+{\em height} & the height of the \hyperlink{class_sprite}{Sprite} \\
+\hline
+{\em pivotx} & the X component of the pivotpoint of the \hyperlink{class_sprite}{Sprite} \\
+\hline
+{\em pivoty} & the Y component of the pivotpoint of the \hyperlink{class_sprite}{Sprite} \\
+\hline
+{\em uvwidth} & the UV width of the Sprite\+Sheet \\
+\hline
+{\em uvheight} & the UV height of the Sprite\+Sheet \\
+\hline
+{\em circle} & generate custom \hyperlink{class_mesh}{Mesh} or Circle (0=square \hyperlink{class_sprite}{Sprite}, 6=hexagon) \\
+\hline
+{\em which} & if a segmentmesh, which segemnt to create (single triangle) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mesh$\ast$ a pointer to the generated \hyperlink{class_mesh}{Mesh} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_a66f5436b2a1b78459f543e45ba5013eb}\label{class_resource_manager_a66f5436b2a1b78459f543e45ba5013eb}} 
+\index{Resource\+Manager@{Resource\+Manager}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!Resource\+Manager@{Resource\+Manager}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}}
+{\footnotesize\ttfamily \hyperlink{class_texture}{Texture} $\ast$ Resource\+Manager\+::get\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{int}]{filter,  }\item[{int}]{wrap }\end{DoxyParamCaption})}
+
+
+
+get a \hyperlink{class_texture}{Texture} (from disk if need be) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the path to the T\+GA file \\
+\hline
+{\em filter} & the filtering of the \hyperlink{class_texture}{Texture} \\
+\hline
+{\em wrap} & the UV wrapping of the \hyperlink{class_texture}{Texture} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Texture$\ast$ a pointer to a \hyperlink{class_texture}{Texture}, created from an image file (.tga only). 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{resourcemanager_8h}{resourcemanager.\+h}\item 
+resourcemanager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\hypertarget{class_core}{}\section{Core Class Reference}
+\label{class_core}\index{Core@{Core}}
+
+
+The \hyperlink{class_core}{Core} class handles updating and rendering of your Entities.  
+
+
+
+
+{\ttfamily \#include $<$core.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_core_a14e63188e0aa7c4a6f72d5501384d1f9}{Core} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{class_core}{Core}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_core_a776f8c46504b14183883c6273f93eaed}\label{class_core_a776f8c46504b14183883c6273f93eaed}} 
+virtual \hyperlink{class_core_a776f8c46504b14183883c6273f93eaed}{$\sim$\+Core} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \hyperlink{class_core}{Core}. \end{DoxyCompactList}\item 
+void \hyperlink{class_core_aae9e07e9a6ff17ee4d2b5c46858515ab}{run} (\hyperlink{class_scene}{Scene} $\ast$scene)
+\begin{DoxyCompactList}\small\item\em runs a \hyperlink{class_scene}{Scene} (update/render) \end{DoxyCompactList}\item 
+void \hyperlink{class_core_ab58f3607dfedfe3b24dd2d6c20ed35ba}{cleanup} ()
+\begin{DoxyCompactList}\small\item\em clean up this session (everything except \hyperlink{class_shader}{Shader}) \end{DoxyCompactList}\item 
+float \hyperlink{class_core_aa10de2c3cab1440c1ee1b1daba0ba3b4}{delta\+Time} ()
+\begin{DoxyCompactList}\small\item\em get delta\+Time double internally, cast to float. glm and Open\+GL expect floats. \end{DoxyCompactList}\item 
+void \hyperlink{class_core_a82f4706b062ad65b24445bdf6fd6573c}{show\+Frame\+Rate} (float numsecs)
+\begin{DoxyCompactList}\small\item\em prints the framerate to output every second \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_core}{Core} class handles updating and rendering of your Entities. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_core_a14e63188e0aa7c4a6f72d5501384d1f9}\label{class_core_a14e63188e0aa7c4a6f72d5501384d1f9}} 
+\index{Core@{Core}!Core@{Core}}
+\index{Core@{Core}!Core@{Core}}
+\subsubsection{\texorpdfstring{Core()}{Core()}}
+{\footnotesize\ttfamily Core\+::\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor of the \hyperlink{class_core}{Core}. 
+
+This file is part of R\+T2D, a 2D Open\+GL framework.
+
+
+\begin{DoxyItemize}
+\item Copyright 2015 Rik Teerling \href{mailto:rik@onandoffables.com}{\tt rik@onandoffables.\+com}
+\begin{DoxyItemize}
+\item Initial commit 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_core_ab58f3607dfedfe3b24dd2d6c20ed35ba}\label{class_core_ab58f3607dfedfe3b24dd2d6c20ed35ba}} 
+\index{Core@{Core}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!Core@{Core}}
+\subsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily void Core\+::cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+clean up this session (everything except \hyperlink{class_shader}{Shader}) 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_core_aa10de2c3cab1440c1ee1b1daba0ba3b4}\label{class_core_aa10de2c3cab1440c1ee1b1daba0ba3b4}} 
+\index{Core@{Core}!delta\+Time@{delta\+Time}}
+\index{delta\+Time@{delta\+Time}!Core@{Core}}
+\subsubsection{\texorpdfstring{delta\+Time()}{deltaTime()}}
+{\footnotesize\ttfamily float Core\+::delta\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get delta\+Time double internally, cast to float. glm and Open\+GL expect floats. 
+
+\begin{DoxyReturn}{Returns}
+float delta\+Time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_core_aae9e07e9a6ff17ee4d2b5c46858515ab}\label{class_core_aae9e07e9a6ff17ee4d2b5c46858515ab}} 
+\index{Core@{Core}!run@{run}}
+\index{run@{run}!Core@{Core}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Core\+::run (\begin{DoxyParamCaption}\item[{\hyperlink{class_scene}{Scene} $\ast$}]{scene }\end{DoxyParamCaption})}
+
+
+
+runs a \hyperlink{class_scene}{Scene} (update/render) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & The scene that needs to \textquotesingle{}run\textquotesingle{}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_core_a82f4706b062ad65b24445bdf6fd6573c}\label{class_core_a82f4706b062ad65b24445bdf6fd6573c}} 
+\index{Core@{Core}!show\+Frame\+Rate@{show\+Frame\+Rate}}
+\index{show\+Frame\+Rate@{show\+Frame\+Rate}!Core@{Core}}
+\subsubsection{\texorpdfstring{show\+Frame\+Rate()}{showFrameRate()}}
+{\footnotesize\ttfamily void Core\+::show\+Frame\+Rate (\begin{DoxyParamCaption}\item[{float}]{numsecs }\end{DoxyParamCaption})}
+
+
+
+prints the framerate to output every second 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numsecs} & print framerate every nth second. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_8h}{core.\+h}\item 
+core.\+cpp\end{DoxyCompactItemize}

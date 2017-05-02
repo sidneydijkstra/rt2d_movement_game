@@ -1,0 +1,131 @@
+\hypertarget{class_noise}{}\section{Noise Class Reference}
+\label{class_noise}\index{Noise@{Noise}}
+
+
+The \hyperlink{class_noise}{Noise} class generates noise (white, smooth, perlin).  
+
+
+
+
+{\ttfamily \#include $<$noise.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_noise_a875a47574d1c86c793296b542e7de9f3}{Noise} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_noise}{Noise} Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_noise_a751f1c229c801b0abd4a84f8bf08d810}\label{class_noise_a751f1c229c801b0abd4a84f8bf08d810}} 
+virtual \hyperlink{class_noise_a751f1c229c801b0abd4a84f8bf08d810}{$\sim$\+Noise} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_noise}{Noise} Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ float $>$ \hyperlink{class_noise_a3056ac12af3678b375a21c684a406f86}{white\+Noise} (int width, int height)
+\begin{DoxyCompactList}\small\item\em generate white noise \end{DoxyCompactList}\item 
+static std\+::vector$<$ float $>$ \hyperlink{class_noise_a321a9943200da195340c920287f724d8}{smooth\+Noise} (std\+::vector$<$ float $>$ \&base\+Noise, int octave, int width, int height)
+\begin{DoxyCompactList}\small\item\em generate smooth noise \end{DoxyCompactList}\item 
+static std\+::vector$<$ float $>$ \hyperlink{class_noise_aa889cc8a2f25fbf1a98a1eaeef7288cb}{perlin\+Noise} (std\+::vector$<$ float $>$ \&base\+Noise, int octave\+Count, int width, int height)
+\begin{DoxyCompactList}\small\item\em generate smooth noise \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_noise}{Noise} class generates noise (white, smooth, perlin). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_noise_a875a47574d1c86c793296b542e7de9f3}\label{class_noise_a875a47574d1c86c793296b542e7de9f3}} 
+\index{Noise@{Noise}!Noise@{Noise}}
+\index{Noise@{Noise}!Noise@{Noise}}
+\subsubsection{\texorpdfstring{Noise()}{Noise()}}
+{\footnotesize\ttfamily Noise\+::\+Noise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_noise}{Noise} Constructor. 
+
+This file is part of R\+T2D, a 2D Open\+GL framework.
+
+
+\begin{DoxyItemize}
+\item Copyright 2015 Rik Teerling \href{mailto:rik@onandoffables.com}{\tt rik@onandoffables.\+com}
+\begin{DoxyItemize}
+\item Initial commit
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Algorithm from\+: \href{http://devmag.org.za/2009/04/25/perlin-noise/}{\tt http\+://devmag.\+org.\+za/2009/04/25/perlin-\/noise/} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_noise_aa889cc8a2f25fbf1a98a1eaeef7288cb}\label{class_noise_aa889cc8a2f25fbf1a98a1eaeef7288cb}} 
+\index{Noise@{Noise}!perlin\+Noise@{perlin\+Noise}}
+\index{perlin\+Noise@{perlin\+Noise}!Noise@{Noise}}
+\subsubsection{\texorpdfstring{perlin\+Noise()}{perlinNoise()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ Noise\+::perlin\+Noise (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ \&}]{base\+Noise,  }\item[{int}]{octave\+Count,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+generate smooth noise 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Noise} & a field of base noise that needs smoothing \\
+\hline
+{\em octave\+Count} & how many fields with different octaves to blend \\
+\hline
+{\em width} & the width of the field \\
+\hline
+{\em height} & the height of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$float$>$ single-\/line grid of noise values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_noise_a321a9943200da195340c920287f724d8}\label{class_noise_a321a9943200da195340c920287f724d8}} 
+\index{Noise@{Noise}!smooth\+Noise@{smooth\+Noise}}
+\index{smooth\+Noise@{smooth\+Noise}!Noise@{Noise}}
+\subsubsection{\texorpdfstring{smooth\+Noise()}{smoothNoise()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ Noise\+::smooth\+Noise (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ \&}]{base\+Noise,  }\item[{int}]{octave,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+generate smooth noise 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Noise} & a field of base noise that needs smoothing \\
+\hline
+{\em octave} & the octave of the noise \\
+\hline
+{\em width} & the width of the field \\
+\hline
+{\em height} & the height of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$float$>$ single-\/line grid of noise values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_noise_a3056ac12af3678b375a21c684a406f86}\label{class_noise_a3056ac12af3678b375a21c684a406f86}} 
+\index{Noise@{Noise}!white\+Noise@{white\+Noise}}
+\index{white\+Noise@{white\+Noise}!Noise@{Noise}}
+\subsubsection{\texorpdfstring{white\+Noise()}{whiteNoise()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ Noise\+::white\+Noise (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+generate white noise 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & the width of the field \\
+\hline
+{\em height} & the height of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$float$>$ single-\/line grid of noise values 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{noise_8h}{noise.\+h}\item 
+noise.\+cpp\end{DoxyCompactItemize}
