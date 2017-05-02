@@ -240,6 +240,8 @@ IF(MAKE_START)
 		start/hudController.h
 		start/hudSprite.cpp
 		start/hudSprite.h
+		start/menu.cpp
+		start/menu.h
 	)
 	target_link_libraries(start
 		${ALL_GRAPHICS_LIBS}
