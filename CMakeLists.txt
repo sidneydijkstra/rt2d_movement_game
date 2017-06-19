@@ -154,65 +154,6 @@ file(
 ####################################################################
 # demo                                                             #
 ####################################################################
-IF(MAKE_DEMO)
-	add_executable(demo
-		demo/main.cpp
-		demo/basicentity.cpp
-		demo/basicentity.h
-		demo/canvas.cpp
-		demo/canvas.h
-		demo/scene00.cpp
-		demo/scene00.h
-		demo/scene01.cpp
-		demo/scene01.h
-		demo/scene02.cpp
-		demo/scene02.h
-		demo/scene03.cpp
-		demo/scene03.h
-		demo/scene03a.cpp
-		demo/scene03a.h
-		demo/scene03b.cpp
-		demo/scene03b.h
-		demo/scene04.cpp
-		demo/scene04.h
-		demo/scene05.cpp
-		demo/scene05.h
-		demo/scene06.cpp
-		demo/scene06.h
-		demo/scene06a.cpp
-		demo/scene06a.h
-		demo/scene07.cpp
-		demo/scene07.h
-		demo/scene08.cpp
-		demo/scene08.h
-		demo/scene09.cpp
-		demo/scene09.h
-		demo/scene10.cpp
-		demo/scene10.h
-		demo/scene11.cpp
-		demo/scene11.h
-	    demo/scene12.cpp
-	    demo/scene12.h
-	    demo/scene13.cpp
-	    demo/scene13.h
-	    demo/scene14.cpp
-	    demo/scene14.h
-		demo/scene15.cpp
-		demo/scene15.h
-		demo/superscene.cpp
-		demo/superscene.h
-		demo/myentity.cpp
-		demo/myentity.h
-	)
-	target_link_libraries(demo
-		${ALL_GRAPHICS_LIBS}
-	)
-	# Copy assets to the build directory
-	file(
-		COPY demo/assets
-		DESTINATION ${CMAKE_BINARY_DIR}
-	)
-ENDIF()
 
 ####################################################################
 # start                                                            #
