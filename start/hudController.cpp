@@ -8,7 +8,7 @@ void HudController::update(float deltaTime){}
 // update
 void HudController::updateText(Point2 cameraPos) {
 	// set text position
-	for each (Text* text in texts){
+	for (Text* text : texts){
 		text->position = text->getOffset() + cameraPos;
 	}
 
@@ -20,7 +20,7 @@ void HudController::updateText(Point2 cameraPos) {
 	}
 
 	// set sprite position
-	for each (HudSprite* sprite in sprites) {
+	for (HudSprite* sprite : sprites) {
 		sprite->position = sprite->offset + cameraPos;
 		sprite->updateSprite();
 	}

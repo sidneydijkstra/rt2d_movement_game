@@ -17,8 +17,9 @@ void Bullet::move(float deltaTime, Map* map) {
 	this->position += velocity.getNormalized() * 300 * deltaTime;
 
 	// check wall collision
-	for each (Node* node in map->collisionGrid){
-		if (circleCollision(this->sprite()->size.x / 2, node->sprite()->size.x / 2, this->position, node->position)) {
+	std::vector<Node*> arr = map->collisionGrid;
+	for (int i = 0; i < arr.size(); i++){
+		if (circleCollision(this->sprite()->size.x / 2, arr[i]->sprite()->size.x / 2, this->position, arr[i]->position)) {
 			isDead = true;
 			break;
 		}

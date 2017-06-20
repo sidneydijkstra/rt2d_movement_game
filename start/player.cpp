@@ -49,14 +49,16 @@ void Player::playerMove(float deltaTime, Map* map, bool keyW, bool keyS, bool ke
 	this->position += direction;
 
 	// collision check
-	for each (Node* node in map->collisionGrid) {
-		if (squareCollision(node->position, node->sprite()->size, Point2(this->position.x, this->position.y + direction.y), this->sprite()->size)) {
+	std::vector<Node*> arr = map->collisionGrid;
+	for (int i = 0; i < arr.size(); i++){
+		if (squareCollision(arr[i]->position, arr[i]->sprite()->size, Point2(this->position.x, this->position.y + direction.y), this->sprite()->size)) {
 			this->position.y -= direction.y;
 		}
-		if (squareCollision(node->position, node->sprite()->size, Point2(this->position.x + direction.x, this->position.y), this->sprite()->size)) {
+		if (squareCollision(arr[i]->position, arr[i]->sprite()->size, Point2(this->position.x + direction.x, this->position.y), this->sprite()->size)) {
 			this->position.x -= direction.x;
 		}
 	}
+
 }
 
 // player shoot

@@ -11,16 +11,17 @@ void EnemySpawnController::update(float deltaTime) {}
 void EnemySpawnController::updateSpawner(float deltaTime) {
 	float dis = INFINITY;
 	std::vector<Node*> nodes;
-	for each (Node* node in map->normalGrid) {
 
+	std::vector<Node*> arr = map->normalGrid;
+	for (int i = 0; i < arr.size(); i++){
 		// if max enemys break
 		if (enemys.size() >= maxEnemysInScene) {
 			break;
 		}
 
 		// get the distance and look for the best tile
-		if (getDistance(player->position, node->position) >= minDistance) {
-			nodes.push_back(node);
+		if (getDistance(player->position, arr[i]->position) >= minDistance) {
+			nodes.push_back(arr[i]);
 		}
 	}
 

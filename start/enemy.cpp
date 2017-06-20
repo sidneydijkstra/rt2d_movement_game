@@ -60,12 +60,13 @@ void Enemy::move(float deltaTime) {
 	}
 
 	// check bullet collision
-	for each (Bullet* bullet in player->weapon->bullets){
-		if (circleCollision(bullet->sprite()->size.x / 2, this->sprite()->size.x / 2, bullet->position, this->position)) {
+	std::vector<Bullet*> arr = player->weapon->bullets;
+	for (int i = 0; i < arr.size(); i++){
+		if (circleCollision(arr[i]->sprite()->size.x / 2, this->sprite()->size.x / 2, arr[i]->position, this->position)) {
 			// remove yourself
-			bullet->isDead = true;
-			bullet->parent()->removeChild(bullet);
-			health -= bullet->damage;
+			arr[i]->isDead = true;
+			arr[i]->parent()->removeChild(arr[i]);
+			health -= arr[i]->damage;
 			if (health <= 0) {
 				// add player points
 				player->points += 100;
@@ -80,7 +81,6 @@ void Enemy::move(float deltaTime) {
 			}
 		}
 	}
-
 }
 
 // circle collision
